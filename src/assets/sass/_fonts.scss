@@ -4,12 +4,15 @@ body, small, li{
     font-weight: normal;
     line-height: 1.5;
 }
-.big-title, .medium-title, .small-title{
+.huge-title, .big-title, .medium-title, .small-title{
     font-family: $fontTitle;
     font-weight: 700;
 }
-.big-title{
+.huge-title{
     font-size: $fontSize7Mobile;
+}
+.big-title{
+    font-size: $fontSize6Mobile;
 }
 .medium-title, .section-4__indication, .section-4__range-value{
     font-size: $fontSize4Mobile;
