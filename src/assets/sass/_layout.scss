@@ -2,11 +2,11 @@ body{
     overflow-x: hidden;
 }
 
-header, footer, .section{
+.header, .footer, .section{
     width: 100vw;
     height: 100vh;
 }
-footer:before, .section:before{
+.footer:before, .section:before{
     content: "";
     position: absolute;
     left: 50%;
