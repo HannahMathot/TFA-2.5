@@ -4,7 +4,7 @@ body, small, li{
     font-weight: normal;
     line-height: 1.5;
 }
-.big-title, .medium-title{
+.big-title, .medium-title, .small-title, .tiny-title{
     font-family: $fontTitle;
     font-weight: 700;
 }
@@ -14,3 +14,9 @@ body, small, li{
 .medium-title{
     font-size: $fontSize3Mobile;
 }
+// .small-title{
+//     font-size: $fontSize6Mobile;
+// }
+// .tiny-title{
+//     font-size: $fontSize3Mobile;
+// }

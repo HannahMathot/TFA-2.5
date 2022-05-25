@@ -31,35 +31,107 @@
     <script src="assets/js/main.min.js" defer></script>
 </head>
 <body>
-    <header class="grid gridheader">
-        <a href="index.html"><img src="assets/images/img2_logo.svg" title="Aller à l'accueil" alt="logo de ce site web"></a>
-        <nav class="header__nav--desktop">
-            <ul>
-                <li><a href="index.html" title="Aller à l'accueil" class="a--active">Accueil</a></li>
-                <li><a href="#" title="Voir la page">Page 2</a></li>
-            </ul>
-        </nav>
-        <button class="header__theme--desktop" title="Mode Jour/Nuit"></button>
-        <button title="Ouvrir/Fermer le menu" class="header__burger">Menu</button>
-        <nav class="header__nav--mobile">
-            <ul class="burger__ul">
-                <li><a href="index.html" title="Aller à l'accueil" class="a--active">Accueil</a></li>
-                <li><a href="#" title="Voir la page">Page 2</a></li>
-                <button class="header__theme--mobile" title="Mode Jour/Nuit"></button>
-            </ul>
-        </nav>
+    <header class="header">
+        <img src="assets/images/2-logo.svg" alt="logo de ce site web" class="logo">
+        <h1 class="big-title">Ménage Vert</h1>
+        <h2 class="medium-title">L’écologie à petit prix</h2>
+        <small class="description">
+            Calculez le nombre de produits ménagers industriels que vous utilisez au quotidien 
+            et découvrez comment les remplacer avec nos recettes écologiques&#8239;!
+        </small>
+        <a href="consommation-utilisateur.html" class="au-prototype">
+            <img src="assets/images/landing/1-au-prototype.svg" alt="bouteille de produit menager" class="au-prototype__img">
+        </a>
     </header>
 
-    <main class="grid gridindex a--visited">
-
+    <main>
+        <section class="section section-1">
+            <h3 class="small-title section-1__title">Calculez votre utilisation de produits ménagers en vous amusant</h3>
+            <p class="section-1__text">
+                Avant d’avoir accès à nos multiples recettes, une interface de jeu vous attend 
+                où vous pourrez indiquer la fréquence d’utilisation de vos produits ménagers industriels.
+            </p>
+            <img src="#" alt="interface de calcul" class="section-1__img">
+        </section>
+        <section class="section section-2">
+            <h3 class="small-title section-2__title">Une comparaison de prix</h3>
+            <p class="section-2__text">
+                Une fois les calculs terminés, notre site vous montre une 
+                estimation de ce vous devriez payer sur une année pour vos produits ménagers. 
+                Il compare ce prix avec celui de nos recettes écologiques afin de vous montrer le 
+                gain d’argent que vous pourriez en tirer si vous les utilisiez.
+            </p>
+            <img src="#" alt="affichage du gain d'argent" class="section-2__img">
+        </section>
+        <section class="section section-3">
+            <h3 class="small-title section-3__title">Des recettes écologiques de remplacement</h3>
+            <p class="section-3__text">
+                Pour chaque produit ménager que vous possédez, Ménage Vert vous propose des 
+                recettes à réaliser vous même.
+            </p>
+            <img src="#" alt="recettes ecologiques pour creer ses produits menagers" class="section-3__img">
+        </section>
+        <section class="section section-4">
+            <b class="section-4__indication">Ces recettes sont&#8239;:</b>
+            <input type="range" min="0" max="2" value="0" class="section-4__range-barre">
+            <b class="section-4__range-value">Ecologiques</b>
+        </section>
+        <section class="section section-5">
+            <h3 class="small-title section-5__title">Des bases de données</h3>
+            <ul class="section-5__list">
+                <li class="section-5__el">de produits ménagers de vos magasins industriels habituels</li>
+                <li class="section-5__el">de recettes écologiques à prix abordable que vous pouvez réaliser chez vous</li>
+                <li class="section-5__el">d’ingrédients écologiques pour vos recettes</li>
+                <li class="section-5__el">complètes et mises à jour chaque trimestre</li>
+            </ul>
+        </section>
+        <section class="section section-6">
+            <h3 class="small-title section-6__firsttitle">Mais surtout...</h3>
+            <h2 class="medium-title section-6__secondtitle">Des utilisateurs altruistes</h2>
+            <p class="section-6__text">
+                Grâce à leurs retours et leurs conseils, ils égaient la plateforme en 
+                permettant aux recettes d’évoluer et de s’améliorer&#8239;!
+            </p>
+            <button class="section-6__button">Rejoiniez-les dans l'aventure</button>
+        </section>
     </main>
     
-    <footer class="grid gridfooter">
-        <a href="http://www.dwm.re/" title="Aller sur la page de mon option" class="dwm">DWM</a>
-        <small>
-            ©&#8239;<span class="annee">Année</span> -
+    <footer class="footer">
+        <h4 class="tiny-title">Derrière le projet</h4>
+        <ul class="liens-pratiques">
+            <li class="liens-pratiques__li">
+                <a href="case-study.html" class="liens-pratiques__lien" title="Voir le Case-Study">Case-Study</a>
+            </li>
+            <li class="liens-pratiques__li">
+                <a href="credits.html" class="liens-pratiques__lien" title="Voir les crédits">Crédits</a>
+            </li>
+            <li class="liens-pratiques__li">
+                <a href="ui-kit.html" class="liens-pratiques__lien" title="Voir le UI-kit">UI-kit</a>
+            </li>
+            <li class="liens-pratiques__li">
+                <a href="https://drive.google.com/drive/folders/1ct9Jh4zkVCSL1Pib80nFl8Ze2wfRjKMS?usp=sharing" class="liens-pratiques__lien" title="Voir les bases de données">Bases de données</a>
+            </li>
+        </ul>
+        <h3 class="small-title">Prototypes</h3>
+        <ul class="prototypes">
+            <li class="prototypes__li">
+                <a href="#" class="prototypes__lien" title="Voir le prototype">1ère version</a>
+            </li>
+            <li class="prototypes__li">
+                <a href="#" class="prototypes__lien" title="Voir le prototype">2ème version</a>
+            </li>
+            <li class="prototypes__li">
+                <a href="#" class="prototypes__lien" title="Voir le prototype">3ème version</a>
+            </li>
+            <li class="prototypes__li">
+                <a href="#" class="prototypes__lien" title="Voir le prototype">4ème version</a>
+            </li>
+        </ul>
+        <small class="copyright">
+            ©&#8239;<span class="copyright__annee">Année</span> -
             <a href="index.html" title="Aller à l'accueil">Hannah Mathot</a>
         </small>
+        <a href="http://www.dwm.re/" title="Aller sur la page DWT/DWM" class="dwm">DWM</a>       
     </footer>
 </body>
 </html>

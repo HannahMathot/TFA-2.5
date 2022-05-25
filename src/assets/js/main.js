@@ -2,36 +2,26 @@
 
 //slider range normal
 //source : https://www.youtube.com/watch?v=YE10hytBBho
-// let rangeValue = document.querySelector(".range__value");
-// let rangeBarre = document.querySelector(".range__barre");
-// let range = document.querySelector(".range");
+let indexValue = document.querySelector(".section-4__range-value");
+let indexRange = document.querySelector(".section-4__range-barre");
 
-// rangeBarre.addEventListener("input", slideRange);
+indexRange.addEventListener("input", indexSlider);
 
-// if(this.value == null){
-//     this.value = 10;
-//     localStorage.setItem('slider-range-normal-final-value', this.value);
-//     localStorage.setItem('vitres-number', this.value);
-//     localStorage.setItem('multi-number', this.value);
-//     localStorage.setItem('detartrant-number', this.value);
-//     currentNumber.innerHTML = localStorage.getItem('compteur-final-number');
-// }
-
-// function slideRange(){
-//   let value = (this.value-this.min)/(this.max-this.min)*100;
-//   localStorage.setItem('slider-range-normal-final-value', this.value);
-//   if (mediumTitle.textContent == "Combien de fois par an lavez-vous vos fenêtres ?") {
-//     localStorage.setItem('vitres-number', this.value);
-// } else if (mediumTitle.textContent == "Combien de fois par mois lavez-vous vos meubles avec votre produit multi-usage ?") {
-//     localStorage.setItem('multi-number', this.value);
-// } else if (mediumTitle.textContent == "Combien de fois par an détartrez-vous vos canalisations ?") {
-//     localStorage.setItem('detartrant-number', this.value);
-// }
-//   rangeValue.innerHTML = localStorage.getItem('slider-range-normal-final-value');
-// }
+function indexSlider(e){
+    let currentValue = e.currentTarget;
+    if (currentValue.value == 0) {
+        indexValue.innerHTML = "Ecologiques";
+    } 
+    if (currentValue.value == 1){
+        indexValue.innerHTML = "Moins chères que leur équivalent en grandes-surfaces";
+    }
+    if (currentValue.value == 2){
+        indexValue.innerHTML = "Efficaces";
+    }
+}
 
 // Année (Copyright)
-// var annee = document.querySelector(".annee");
-// let date = new Date();
-// let year = date.getUTCFullYear();
-// annee.innerHTML = year
+var annee = document.querySelector(".copyright__annee");
+let date = new Date();
+let year = date.getUTCFullYear();
+annee.innerHTML = year
