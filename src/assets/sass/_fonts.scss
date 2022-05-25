@@ -1,0 +1,16 @@
+body, small, li{
+    font-family: $fontBody;
+    font-size: $fontSize2Mobile;
+    font-weight: normal;
+    line-height: 1.5;
+}
+.big-title, .medium-title{
+    font-family: $fontTitle;
+    font-weight: 700;
+}
+.big-title{
+    font-size: $fontSize6Mobile;
+}
+.medium-title{
+    font-size: $fontSize3Mobile;
+}

@@ -1,0 +1,154 @@
+.armoire{
+    &__el{
+        z-index: 20;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__el, button{
+        position: absolute;
+    }
+    &__lessive{
+        width: 27px;
+        top: 143px;
+        transform: translateX(-65px);
+    }
+    &__adoucissant{
+        width: 34px;
+        top: 143px;
+        transform: translateX(-40px);
+    }
+    &__vitres{
+        width: 28px;
+        top: 147px;
+        transform: translateX(7px);
+    }
+    &__wc{
+        width: 20px;
+        top: 144px;
+        transform: translateX(42px);
+    }
+    &__tablettes{
+        width: 35px;
+        top: 239px;
+        transform: translateX(-66px);
+    }
+    &__multi{
+        width: 20px;
+        top: 228px;
+        transform: translateX(-28px);
+    }
+    &__degraissant{
+        width: 23px;
+        top: 229px;
+        transform: translateX(10px);
+    }
+    &__desodorisant{
+        width: 17px;
+        top: 227px;
+        transform: translateX(44px);
+    }
+    &__detartrant{
+        width: 20px;
+        top: 309px;
+        transform: translateX(-60px);
+    }
+    &__liquide{
+        width: 28px;
+        top: 309px;
+        transform: translateX(35px);
+    }
+}
+
+.slider{
+    top: 355px;
+    transform: translateX(-50%);
+    z-index: 25;
+    &__button{
+        top: 110px;
+        z-index: 30;
+        background-image: url("../images/4-fleche.svg");
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center;
+        width: 50px;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        &--previous{
+            transform: translateY(0px) translateX(-50%) translateX(-110px);
+        }
+        &--next{
+            transform: translateY(0px) translateX(-50%) translateX(110px) rotate(180deg);
+        }
+    }
+    &__el{
+        top: 0;
+        transform: translateX(-50%);
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        list-style: none;
+        &--show{
+            visibility: visible;
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+}
+.slider, .slider__button, .slider__el{
+    position: absolute;
+    left: 50%;
+}
+
+.armoire, .slider{
+    &__el button{
+        height: 150px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        border: none;
+    }
+    .no-background{
+        background-image: none;
+        border: dashed 2px hsla(0, 0%, 0%, 30%);
+    }
+    &__lessive{
+        background-image: url("../images/prototype/produits-labellisés/1-lessive.svg");
+    }
+    &__adoucissant{
+        background-image: url("../images/prototype/produits-labellisés/2-adoucissant.svg");
+    }
+    &__vitres{
+        background-image: url("../images/prototype/produits-labellisés/3-vitres.svg");
+    }
+    &__wc{
+        background-image: url("../images/prototype/produits-labellisés/4-wc.svg");
+    }
+    &__tablettes{
+        background-image: url("../images/prototype/produits-labellisés/5-tablettes.svg");
+    }
+    &__multi{
+        background-image: url("../images/prototype/produits-labellisés/6-multi.svg");
+    }
+    &__degraissant{
+        background-image: url("../images/prototype/produits-labellisés/7-degraissant.svg");
+    }
+    &__desodorisant{
+        background-image: url("../images/prototype/produits-labellisés/8-desodorisant.svg");
+    }
+    &__detartrant{
+        background-image: url("../images/prototype/produits-labellisés/9-detartrant.svg");
+    }
+    &__liquide{
+        background-image: url("../images/prototype/produits-labellisés/10-liquide.svg");
+    }
+}
+
+.slider__button, .slider__el button, .armoire__el button{
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+}

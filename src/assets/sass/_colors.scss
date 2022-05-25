@@ -1,0 +1,48 @@
+body{
+    background-color: $backgroundColor;
+}
+body, ul li, a{
+    color: $fontColor;
+}
+a{
+    color: $contrasteColor;
+    :hover{
+        color: $contrasteColorHover;
+    }
+    :active{
+        color: $contrasteColorActive;
+    }
+}
+a:visited{
+    color: $visitedColor;
+    :hover{
+        color: $visitedColorHover;
+    }
+    :active{
+        color: $visitedColorActive;
+    }
+}
+button{
+    background-color: $contrasteColor;
+    :hover{
+        background-color: $contrasteColorHover;
+    }
+    :active{
+        background-color: $contrasteColorActive;
+    }
+    :disabled{
+        background-color: $disabled;
+    }
+}
+::-webkit-scrollbar{
+    width: 15px;
+    &-track {
+        background-color: $scrollBackground;
+    }
+    &-thumb {
+        background-color: $scrollBarre;
+    }
+}
+.warning{
+    background-color: $backgroundColor;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="images/1-favicone.svg"/>    
+    <!--<meta name="description" content="description">-->
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" >
+    <meta name="twitter:site" content="@DwmHannah" >
+    <meta name="twitter:creator" content="@DwmHannah" >
+    <!-- <meta name="twitter:title" content="titre de la page"> -->
+    <!-- <meta name="twitter:description" content="description" > -->
+    <!-- <meta name="twitter:image" content="http://hannah-mathot.be/projets/lien-du-logo-de-partage" > -->
+    <!-- Open Graph data -->
+    <!-- <meta property="og:site_name" content="titre de la page" /> -->
+    <!-- <meta property="og:title" content="titre de la page" /> -->
+    <!-- <meta property="og:description" content="description" /> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.hannah-mathot.be/" />
+    <!-- <meta property="og:image" content="http://hannah-mathot.be/projets/lien-du-logo-de-partage" /> -->
+    <!-- <meta property="og:image:width" content="largeur (juste le nombre, pas le mot px en plus)"> -->
+    <!-- <meta property="og:image:height" content="hauteur (L ou H = max 140 px)"> -->
+    <!-- <title>titre de la page</title> -->
+    <!-- font-family title -->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/prototype.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js" defer></script>
+    <script src="assets/js/hammer.min.js" defer></script>
+    <script src="assets/js/prototype.min.js" defer></script>
+</head>
+<body>
+    <!-- warning -->
+    <div class="warning">
+        <h1 class="warning__el">Cher utilisateur</h1>
+        <p class="warning__el">
+            Ménage Vert n'est actuellement disponible que sous forme de prototype.
+            Sa sortie en tant que site web et application mobile finalisés arrivera très prochainement.
+        </p>
+        <p class="warning__el">
+            La première partie du site (le calcul de votre utilisation de produits ménagers industriels)
+            est déjà codée car elle utilise des calculs précis qu'un prototype cliquable ne pourrait pas gérer.
+            La partie avec les recettes utilise, quant à elle, le logiciel Figma.
+        </p>
+        <p class="warning__el">
+            Merci de votre compréhension.
+        </p>
+        <button class="warning__el warning__next">Continuer</button>
+    </div>
+
+    <header class="main-container">
+        <h1 class="big-title">Etape 1 sur 2</h1>
+        <h2 class="medium-title">Dans vos produits ménagers, lesquels sont industriels&#8239;?</h2>
+    </header>
+
+    <main class="main-container">
+        <div class="compteur hidden">
+            <div class="compteur__tablettes hidden"></div>
+            <button class="compteur__remove">-</button>
+            <p class="compteur__value">10</p>
+            <button class="compteur__add">+</button>
+        </div>
+        <div class="range hidden">
+            <span class="range__value">10</span>
+            <input type="range" min="0" max="100" value="0" class="range__barre">
+        </div>
+        <div id="round" class="round hidden"></div>
+        <div class="armoire">
+            <ul>
+                <li class="armoire__el hidden">
+                    <button class="armoire__lessive">Lessive</button>
+                </li>
+                <li class="armoire__el hidden">
+                    <button class="armoire__adoucissant">Adoucissant</button>
+                </li>
+                <li class="armoire__el hidden">
+                    <button class="armoire__vitres">Produit pour vitres</button>
+                </li>
+                <li class="armoire__el hidden">
+                    <button class="armoire__wc">Produit pour WC</button>
+                </li>
+                <li class="armoire__el hidden">
+                    <button class="armoire__tablettes">Tablettes de lave-vaisselle</button>
+                </li>
+                <li class="armoire__el hidden">
+                    <button class="armoire__multi">Produit multi-usage</button>
+                </li>
+                <li class="armoire__el hidden">
+                    <button class="armoire__degraissant">Dégraissant</button>
+                </li>
+                <li class="armoire__el hidden">
+                    <button class="armoire__desodorisant">Désodorisant</button>
+                </li>
+                <li class="armoire__el hidden">
+                    <button class="armoire__detartrant">Détartrant</button>
+                </li>
+                <li class="armoire__el hidden">
+                    <button class="armoire__liquide">Liquide vaisselle</button>
+                </li>
+            </ul>
+        </div>
+        <img class="main-image" src="assets/images/prototype/main-image/0-armoire.svg" alt="armoire ouverte">
+        <div class="slider">
+            <ul class="slider__arrows">
+                <li class="slider__button slider__button--previous"><button>Précédente</button></li>
+                <li class="slider__button slider__button--next"><button>Suivante</button></li>
+            </ul>
+            <ul>
+                <li class="slider__el slider__el--show">
+                    <button class="slider__lessive">Lessive</button>
+                </li>
+                <li class="slider__el">
+                    <button class="slider__adoucissant">Adoucissant</button>
+                </li>
+                <li class="slider__el">
+                    <button class="slider__vitres">Produit pour vitres</button>
+                </li>
+                <li class="slider__el">
+                    <button class="slider__wc">Produit pour WC</button>
+                </li>
+                <li class="slider__el">
+                    <button class="slider__tablettes">Tablettes de lave-vaisselle</button>
+                </li>
+                <li class="slider__el">
+                    <button class="slider__multi">Produit multi-usage</button>
+                </li>
+                <li class="slider__el">
+                    <button class="slider__degraissant">Dégraissant</button>
+                </li>
+                <li class="slider__el">
+                    <button class="slider__desodorisant">Désodorisant</button>
+                </li>
+                <li class="slider__el">
+                    <button class="slider__detartrant">Détartrant</button>
+                </li>
+                <li class="slider__el">
+                    <button class="slider__liquide">Liquide vaisselle</button>
+                </li>
+            </ul>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="barre"></div>
+        <button class="next">Suivant</button>
+    </footer>
+</body>
+</html>
