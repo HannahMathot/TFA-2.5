@@ -93,25 +93,3 @@
         }
     }
 }
-
-
-.section-4{
-    &__range-barre{
-        -webkit-appearance: none;
-        width: 200px;
-        height: 20px;
-        background-color: $rangeBackgroundColor;
-        border-radius: 25px;
-        ::-webkit-slider-thumb{
-            appearance: none;
-            cursor: pointer;
-            height: 200px;
-            width: 200px;
-            background-image: url(../images/prototype/autres-elements/1-eponge.svg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            background-color: transparent;
-        }
-    }
-}
