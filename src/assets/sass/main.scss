@@ -5,7 +5,7 @@
 // variables
 //font family
 $fontBody: 'Bona Nova', serif;
-$fontTitle: 'Bona Nova', serif;
+$fontTitle: 'Lora', serif;
 
 //font size
 //hierarchie = 1.2
@@ -60,10 +60,11 @@ $liquideRoundColor: #4A4A4A;
 @import '_fonts';
 @import '_colors';
 @import '_layout'; /*vide*/
-@import '_responsive'; /*vide*/
 
 @import 'fonctionnalites/_slider-armoire';
 @import 'fonctionnalites/_compteur';
 @import 'fonctionnalites/_slider-range-normal';
 @import 'fonctionnalites/_slider-range-round';
 @import 'prototype';
+
+@import '_responsive'; /*vide*/

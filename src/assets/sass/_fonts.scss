@@ -4,19 +4,16 @@ body, small, li{
     font-weight: normal;
     line-height: 1.5;
 }
-.big-title, .medium-title, .small-title, .tiny-title{
+.big-title, .medium-title, .small-title{
     font-family: $fontTitle;
     font-weight: 700;
 }
 .big-title{
-    font-size: $fontSize6Mobile;
+    font-size: $fontSize7Mobile;
 }
-.medium-title{
+.medium-title, .section-4__indication, .section-4__range-value{
+    font-size: $fontSize4Mobile;
+}
+.small-title{
     font-size: $fontSize3Mobile;
 }
-// .small-title{
-//     font-size: $fontSize6Mobile;
-// }
-// .tiny-title{
-//     font-size: $fontSize3Mobile;
-// }
