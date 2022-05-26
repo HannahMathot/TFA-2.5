@@ -38,7 +38,7 @@ body{
     }
 }
 
-.header, .logo{
+.header, .header .logo{
     display: block;
     margin: 0 auto;
 }
@@ -57,15 +57,17 @@ body{
             padding-left: 60px;
         }
     }
-    &-1{
-        background-image: url(../images/landing/2-deco-1.svg);
-        background-size: 150px;
-        background-position: 125% 113%;
+    &-1, &-3, &-5{
         .medium-title{
             padding-top: 22px;
         }
     }
-    &-2, &-4, &-6{
+    &-1{
+        background-image: url(../images/landing/2-deco-1.svg);
+        background-size: 150px;
+        background-position: 125% 113%;
+    }
+    &-2, &-4, &-6, &-8{
         &__img{
             width: 340px;
             position: absolute;
@@ -81,16 +83,12 @@ body{
         .medium-title{
             width: 260px;
             transform: translateX(-20px);
-            padding-top: 22px;
         }
     }
     &-5{
         background-image: url(../images/landing/2-deco-3.svg);
         background-size: 170px;
         background-position: 130% 130%;
-        .medium-title{
-            padding-top: 22px;
-        }
     }
     &-7{
         &__el{
@@ -132,6 +130,10 @@ body{
             transform: translateX(-50%) translateY(60px);
             width: 140px;
             height: 70px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            text-align: center;
         }
     }
 }

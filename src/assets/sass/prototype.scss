@@ -63,7 +63,12 @@
     right: 3%;
     bottom: 12px;
 }
-.barre, .next{
+footer .logo{
+    width: 55px;
+    left: 3%;
+    bottom: 5px;
+}
+.barre, .next, footer .logo{
     position: absolute;
 }
 
