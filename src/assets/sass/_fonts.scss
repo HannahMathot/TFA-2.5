@@ -1,4 +1,4 @@
-body, small, li{
+body, small, li, .rs-tooltip-text{
     font-family: $fontBody;
     font-size: $fontSize2Mobile;
     font-weight: normal;
@@ -14,7 +14,7 @@ body, small, li{
 .big-title{
     font-size: $fontSize6Mobile;
 }
-.medium-title, .section-4__indication, .section-4__range-value{
+.medium-title, .section-4__indication, .section-4__range-value, .rs-tooltip-text, .au-prototype{
     font-size: $fontSize4Mobile;
 }
 .small-title{

@@ -3,10 +3,11 @@
     background-position-y: center;
     &--lessive{
         *{
-            top: 162px;
+            top: 208px;
         }
         button{
-            background-color: $lessiveButtonBackgroundColor;
+            background-color: transparent;
+            border: none;
             width: 30px;
             text-align: center;
         }
@@ -32,14 +33,14 @@
         }
         .compteur__tablettes{
             background-image: url(../images/prototype/autres-elements/4-tablettes.svg);
-            width: 180px;
-            height: 180px;
-            transform: translateY(320px) translateX(-50%) translateX(110px);
+            width: 160px;
+            height: 160px;
+            transform: translateY(320px) translateX(-50%) translateX(100px);
         }
         .compteur__remove{
             background-image: url(../images/prototype/autres-elements/5-tablette-moins.svg);
             transform: translateY(450px) translateX(-50%) translateX(30px);
-            background-position: bottom;
+            background-position-y: 150%;
         }
         .compteur__value{
             background-image: url(../images/prototype/autres-elements/6-tablette-value.svg);
@@ -58,14 +59,14 @@
             font-size: $fontSize7Mobile;
         }
         .compteur__remove{
-            transform: translateY(215px) translateX(-50%) translateX(-130px);
+            transform: translateY(255px) translateX(-50%) translateX(-130px);
         }
         .compteur__value{
-            transform: translateY(215px) translateX(-50%) translateX(-90px);
+            transform: translateY(255px) translateX(-50%) translateX(-90px);
             font-size: $fontSize5Mobile;
         }
         .compteur__add{
-            transform: translateY(213px) translateX(-50%) translateX(-50px);
+            transform: translateY(253px) translateX(-50%) translateX(-50px);
         }
     }
     &--lessive, &--tablettes, &--desodorisant{

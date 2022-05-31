@@ -1,0 +1,16 @@
+@media (min-width : 0px){
+    .warning__el4{
+        display: none;
+    }
+}
+
+@media (min-width : 700px){
+    .warning__el{
+        &1,&2,&3{
+            display: none;
+        }
+        &4{
+            display: inline-block;
+        }
+    }
+}

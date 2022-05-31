@@ -1,7 +1,7 @@
 .round{
     &--wc{
         transform: translateX(-50%);
-        top: 345px;
+        top: 380px;
         .rs-path-color, .rs-range-color {
             background-color: $wcRoundColor;
         }
@@ -20,7 +20,7 @@
     }
     &--degraissant{
         transform: translateX(-50%);
-        top: 280px;
+        top: 312px;
         .rs-path-color, .rs-range-color {
             background-color: $degraissantRoundColor;
         }
@@ -38,7 +38,7 @@
     }
     &--liquide{
         transform: translateX(-50%) translateX(-51px);
-        top: 298px;
+        top: 338px;
         .rs-path-color, .rs-range-color {
             background-color: $liquideRoundColor;
         }
@@ -63,5 +63,8 @@
             background-repeat: no-repeat;
             background-color: transparent;
         }
+    }
+    .rs-bar .rs-seperator{
+        display: none;
     }
 }

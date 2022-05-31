@@ -7,22 +7,38 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    top: 0;
+    left: 0;
     &__el{
         max-width: 400px;
         margin: 10px 0;
         width: 90%;
+        &1{
+            margin-top: 55px;
+        }
     }
-    // &__next{
-    //     style
-    // }
 }
 
+//header
+.next{
+    right: 15px;
+    top: 19px;
+}
+.logo--prototype{
+    width: 160px;
+    left: 15px;
+    top: 12px;
+    z-index: 10000;
+}
+.next, .logo--prototype{
+    position: absolute;
+}
 .main-container{
     max-width: 1000px;
     margin: 0 auto;
 }
 .big-title{
-    margin: 10px 0 0 15px;
+    margin: 55px 0 0 15px;
 }
 .small-title{
     margin: 0 0 0 15px;
@@ -31,48 +47,48 @@
 //main image
 .main-image{
     position: absolute;
-    top: 155px;
+    top: 200px;
     left: 50%;
     transform: translateX(-50%);
     width: 250px;
     z-index: 10;
-    &--multi, &--degraissant, &--desodorisant, &--detartrant, &--liquide{
+    &--multi, &--degraissant, &--desodorisant{
         width: 320px;
     }
+    &--detartrant{
+        width: 350px;
+        transform: translateX(-50%) translateX(4px);
+    }
+    &--liquide{
+        width: 320px;
+        transform: translateX(-50%)
+    }
+
     &--multi, &--degraissant{
-        top: 230px;
+        top: 270px;
     }
     &--desodorisant{
-        top: 190px;
+        top: 235px;
     }
-    &--detartrant, &--liquide{
-        top: 230px;
+    &--detartrant{
+        top: 250px;
     }
-}
-
-//footer
-.barre{
-    width: 94%;
-    height: 1px;
-    background-color: black;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 50px;
-}
-.next{
-    right: 3%;
-    bottom: 12px;
-}
-footer .logo{
-    width: 55px;
-    left: 3%;
-    bottom: 5px;
-}
-.barre, .next, footer .logo{
-    position: absolute;
+    &--liquide{
+        top: 270px;
+    }
 }
 
 //hidden
 .hidden{
     display: none;
+}
+
+//boutons
+.next{
+    width: 61px;
+    height: 38px;
+}
+.warning__next{
+    width: 102px;
+    height: 40px;
 }

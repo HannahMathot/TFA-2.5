@@ -6,31 +6,36 @@ body, ul li, a{
 }
 a{
     color: $contrasteColor;
-    :hover{
+    &:hover{
         color: $contrasteColorHover;
     }
-    :active{
+    &:active{
         color: $contrasteColorActive;
     }
 }
-a:visited{
+main a:visited{
     color: $visitedColor;
-    :hover{
+    &:hover{
         color: $visitedColorHover;
     }
-    :active{
+    &:active{
         color: $visitedColorActive;
     }
 }
-button{
-    background-color: $contrasteColor;
-    :hover{
-        background-color: $contrasteColorHover;
+.next, .warning__next, .au-prototype{
+    color: $fontColor;
+    background-color: $backgroundColor;
+    outline: 2px solid $contrasteColor;
+    &:hover{
+        outline-offset: 3px;
+        transition: ease-in 0.1s;
+        color: $fontColor;
     }
-    :active{
-        background-color: $contrasteColorActive;
+    &:active{
+        outline: 2px solid $contrasteColorActive;
+        color: $fontColor;
     }
-    :disabled{
+    &:disabled{
         background-color: $disabled;
     }
 }
@@ -45,4 +50,8 @@ button{
 }
 .warning{
     background-color: $backgroundColor;
+}
+
+.round--liquide .rs-tooltip-text{
+    color: $backgroundColor;
 }
