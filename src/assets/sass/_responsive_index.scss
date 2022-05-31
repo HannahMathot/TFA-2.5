@@ -1,52 +1,80 @@
-@media (min-width : 500px){
-    .header{
-        width: 380px;
-        .huge-title, .medium-title{
-            text-align: center;
+@media (min-width : 400px){
+    .section{
+        &-3__title{
+            margin-top: 85px;
         }
-        .medium-title{
-            padding-bottom: 20px;
+        &-5__title{
+            margin-top: 95px;
         }
     }
+}
+
+@media (min-width : 450px){
     .section{
-        &-1, &-3, &-5, &-7, &-9{
-            .medium-title, p, img{
-                width: 370px;
+        &-1__title{
+            margin-top: 65px;
+        }
+    }
+}
+
+@media (min-width : 500px){
+    .grid .section{
+        &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9{
+            &__title, &__first-title, &__second-title, &__button{
+                grid-column: 3/16;
             }
             &__text{
-                max-width: 300px;
-                padding-top: 20px;
+                grid-column: 5/16;
+            }
+            &__list{
+                grid-column: 6/16;
             }
         }
-        &-1, &-3, &-5{
-            .medium-title{
-                padding-top: 35px;
+        &-2, &-4, &-6, &-8{
+            img{
+                width: 350px;
             }
         }
         &-1{
-            background-position: 110% 113%;
+            background-position: 110% 110%;
         }
         &-3{
             background-position: -10% 110%;
         }
         &-5{
-            background-position: 115% 130%;
+            background-position: 110% 130%;
         }
         &-7{
-            background-position: 105% 110%;
-            &__el{
-                padding: 10px 0 10px 150px;
-                max-width: 300px;
-            }
-            .medium-title{
-                padding-bottom: 10px;
-            }
+            background-position: 105% 105%;
         }
-        &-2, &-4, &-6, &-8{
-            &__img{
-                width: 380px;
-                padding-top: 80px;
-            }
+    }
+    .footer{
+        .small-title{
+            padding-left: 120px;
+            padding-top: 60px;
+        }
+        .liens-pratiques, .prototypes{
+            padding-left: 180px;
+        }
+        .copyright{
+            padding-top: 100px;
+        }
+    }
+}
+
+@media (min-width : 550px){
+    .grid .section-9{
+        grid-template-rows: 140px 80px 170px;
+        &__first-title{
+            margin-top: 80px;
+        }
+    }
+    .footer{
+        .small-title{
+            padding-left: 150px;
+        }
+        .liens-pratiques, .prototypes{
+            padding-left: 220px;
         }
     }
 }
