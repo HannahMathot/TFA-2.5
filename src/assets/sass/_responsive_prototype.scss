@@ -5,11 +5,11 @@
 }
 
 @media (min-width : 700px){
-    .warning__el{
-        &1,&2,&3{
+    .warning{
+        &__el1,&__el2,&__el3,&__next{
             display: none;
         }
-        &4{
+        &__el4{
             display: inline-block;
         }
     }

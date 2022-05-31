@@ -17,6 +17,27 @@ body, small, li, .rs-tooltip-text{
 .medium-title, .section-4__indication, .section-4__range-value, .rs-tooltip-text, .au-prototype{
     font-size: $fontSize4Mobile;
 }
-.small-title{
+.small-title, .section-9__button{
     font-size: $fontSize3Mobile;
+}
+footer a{
+    text-decoration: none;
+    position: relative;
+    &:after {
+        content:'';
+        position: absolute;
+        width: 100%;
+        height: 2.5px;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s;
+    }
+    &:hover {
+        &:after {
+            transform-origin: bottom left;
+            transform: scaleX(1);
+        }
+    }
 }
