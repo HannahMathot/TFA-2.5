@@ -100,6 +100,40 @@
     }
 }
 
+.first-table, .second-table, .third-table{
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    *{
+        border: solid 1px $secondMainColor;
+    }
+    margin-bottom: 80px;
+    &__total{
+        font-weight: bold;
+    }
+}
+
+.details-title{
+    margin: 0;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.first-title, .second-title, .third-title{
+    margin-left: 35px;
+    padding-bottom: 20px;
+}
+
+.download-print{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 140px;
+}
+
+
+
 .footer{
     &-nav{
         position: fixed;

@@ -100,3 +100,7 @@ footer a{
 .results-list__el, .liens-list__el{
     border: 1px solid $contrasteColor;
 }
+
+thead{
+    background-color: $tableHead;
+}
