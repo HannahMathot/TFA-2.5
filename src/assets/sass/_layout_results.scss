@@ -1,0 +1,132 @@
+.logo--results{
+    width: 266px;
+    height: 62px;
+    margin: 66px 0 38px 20px;
+}
+.results{
+    &-text{
+        width: 237px;
+    }
+    &-list{
+        &__el{
+            max-width: 227px;
+            border-radius: 15px;
+            display: block;
+            margin: 0 auto;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        &__description{
+            text-align: left;
+        }
+        &__value, &__frequence{
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+.in-between-title{
+    padding-top: 57px;
+    width: 237px;
+}
+
+.highlight-text, .results-text, .in-between-title{
+    margin: 0 20px;
+}
+
+.section-highlighted{
+    margin-top: 54px;
+    .highlight-text{
+        padding-top: 20px;
+    }
+}
+
+.carte-multi{
+    width: 174px;
+    margin: 0 auto;
+    display: block;
+    padding: 25px 0;
+}
+
+.liens{
+    &-pratiques{
+        padding-bottom: 70px;
+    }
+    &-title{
+        width: 290px;
+        margin-bottom: 20px;
+    }
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 98vw;
+        margin: 0 auto;
+        &__el{
+            width: 39vw;
+            border-radius: 15px;
+            padding: 8px;
+            margin-top: 20px;
+            text-align: center;
+            margin: 7px;            
+        }
+        &__label{
+            padding-top: 100px;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: 15%;
+            &1{
+                background-image: url(../images/prototype/resultats/6-recettes.svg);
+                background-size: 10vmax;
+            }
+            &2{
+                background-image: url(../images/prototype/resultats/7-details-calcul.svg);
+                background-size: 15vmax;
+                background-position-y: 7%;
+            }
+            &3{
+                background-image: url(../images/prototype/resultats/8-comment-calcule.svg);
+                background-size: 10vmax;
+            }
+            &4{
+                background-image: url(../images/prototype/resultats/9-reset.svg);
+                background-size: 9vmax;
+                background-position-y: 23%;
+            }
+        }
+    }
+}
+
+.footer{
+    &-nav{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    &-list{
+        display: flex;
+        height: 60px;
+        width: 100vw;
+        align-items: center;
+        justify-content:space-around;
+        &__el{
+            &1{
+                width: 34px;
+                height: 32px;
+            }
+            &2{
+                width: 25.1px;
+                height: 32.36px;
+            }
+            &3{
+                width: 26px;
+                height: 24px;
+            }
+            &4{
+                width: 27px;
+                height: 27px;
+            }
+        }
+    }
+}

@@ -42,8 +42,7 @@ $visitedColorActive: hsl(269, 37%, 65%);
 $scrollBackground: hsl(144, 59%, 85%);
 $scrollBarre: hsl(144, 59%, 45%);
 
-//autres
-$disabled: gray;
+//calculs
 $lessiveButtonBackgroundColor: #7ECB9D;
 $compteurColor: #ffffff;
 $rangeBackgroundColor: #90ee90;
@@ -54,18 +53,23 @@ $wcRoundColor: #999999;
 $degraissantRoundColor: hsl(43, 30%, 50%);
 $liquideRoundColor: #4A4A4A;
 
+//autres
+$disabled: gray;
+$secondMainColor: #D9D9D9;
+$highlightBakground: #FAFCF8;
+
 //imports
 @import '_normalize';
 @import '_reset';
 @import '_fonts';
 @import '_colors';
-@import '_layout';
+@import '_layout_landing';
 
 @import 'fonctionnalites/_slider-armoire';
 @import 'fonctionnalites/_compteur';
 @import 'fonctionnalites/_slider-range-normal';
 @import 'fonctionnalites/_slider-range-round';
-@import 'prototype';
+@import '_layout_calcul';
+@import '_layout_results';
 
-@import '_responsive_index';
-@import '_responsive_prototype';
+@import '_responsive';

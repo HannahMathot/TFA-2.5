@@ -4,23 +4,26 @@ body, small, li, .rs-tooltip-text{
     font-weight: normal;
     line-height: 1.5;
 }
-.huge-title, .big-title, .medium-title, .small-title{
+.huge-title, .big-title, .medium-title, .in-between-title, .small-title{
     font-family: $fontTitle;
     font-weight: 700;
 }
 .huge-title{
     font-size: $fontSize7Mobile;
 }
-.big-title{
+.big-title, .results-list__value{
     font-size: $fontSize6Mobile;
 }
-.medium-title, .section-4__indication, .section-4__range-value, .rs-tooltip-text, .au-prototype{
+.medium-title, .section-4__indication, .section-4__range-value, .rs-tooltip-text, .au-prototype, .results-list__value{
     font-size: $fontSize4Mobile;
 }
-.small-title, .section-9__button{
+.in-between-title{
+    font-size: $fontSize5Mobile;
+}
+.small-title, .section-9__button, .results-text, .highlight-text, .liens-list__el{
     font-size: $fontSize3Mobile;
 }
-footer a{
+.footer a{
     text-decoration: none;
     position: relative;
     &:after {

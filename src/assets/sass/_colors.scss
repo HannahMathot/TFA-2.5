@@ -10,21 +10,6 @@ footer a{
         background-color: $fontColor;
     }
 }
-// main a:visited{
-//     color: $visitedColor;
-//     &:hover{
-//         color: $visitedColorHover;
-//         &:after{
-//             background-color: $visitedColorHover;
-//         }
-//     }
-//     &:active{
-//         color: $visitedColorActive;
-//         &:after{
-//             background-color: $visitedColorActive;
-//         }
-//     }
-// }
 .next, .warning__next, .au-prototype, .section-9__button{
     color: $fontColor;
     background-color: $backgroundColor;
@@ -52,10 +37,66 @@ footer a{
         background-color: $scrollBarre;
     }
 }
-.warning{
+.warning, .footer-list{
     background-color: $backgroundColor;
 }
 
 .round--liquide .rs-tooltip-text{
     color: $backgroundColor;
+}
+
+.compteur--lessive{
+    .compteur__value{
+        color: $compteurColor;
+    }
+}
+
+.range{
+    &__barre{
+        background-color: $rangeBackgroundColor;
+    }
+    &--vitres input{
+        background-color: $vitresRangeBackgroundColor;
+    }
+    &--multi input{
+        background-color: $multiRangeBackgroundColor;
+    }
+    &--detartrant input{
+        background-color: $detartrantRangeBackgroundColor;
+    }
+}
+
+.round{
+    &--wc{
+        .rs-path-color, .rs-range-color {
+            background-color: $wcRoundColor;
+        }
+    }
+    &--degraissant{
+        .rs-path-color, .rs-range-color {
+            background-color: $degraissantRoundColor;
+        }
+    }
+    &--liquide{
+        .rs-path-color, .rs-range-color {
+            background-color: $liquideRoundColor;
+        }
+    }
+}
+
+.footer-list{
+    box-shadow: 0px -4px 10px hsla(0, 0%, 0%, 7%);
+    &__el{
+        &--active{
+            fill: $contrasteColor;
+        }
+    }
+}
+
+.section-1, .section-3, .section-5, .section-7, .section-9, .section-highlighted{
+    background-color: $highlightBakground;
+}
+
+.results-list__el, .liens-list__el{
+    border: 1px solid $contrasteColor;
 }
