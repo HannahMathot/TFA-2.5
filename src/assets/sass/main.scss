@@ -38,10 +38,6 @@ $visitedColor: #8b63b7;
 $visitedColorHover: hsl(269, 37%, 59%);
 $visitedColorActive: hsl(269, 37%, 65%);
 
-//scrollbar
-$scrollBackground: hsl(144, 59%, 85%);
-$scrollBarre: hsl(144, 59%, 45%);
-
 //calculs
 $lessiveButtonBackgroundColor: #7ECB9D;
 $compteurColor: #ffffff;
@@ -56,8 +52,9 @@ $liquideRoundColor: #4A4A4A;
 //autres
 $disabled: gray;
 $secondMainColor: #D9D9D9;
-$highlightBakground: #FAFCF8;
+$highlightBackground: #FAFCF8;
 $tableHead: #F2F7ED;
+$lightContrasteColor: hsl(97, 50%, 90%);
 
 //imports
 @import '_normalize';

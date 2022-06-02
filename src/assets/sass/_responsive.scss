@@ -197,7 +197,7 @@
             }
         }
     }
-    .header{
+    .header, .case-header{
         width: 450px;
         .logo{
             width: 350px;
@@ -216,7 +216,7 @@
     body, small, li{
         font-size: $fontSize2Desktop;
     }
-    .header{
+    .header, .case-header{
         .logo{
             padding-top: 55px;
         }

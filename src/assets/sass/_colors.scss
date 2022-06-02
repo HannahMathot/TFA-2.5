@@ -4,7 +4,7 @@ body{
 body, ul li, a{
     color: $fontColor;
 }
-footer a{
+footer a, .grid-case a{
     &:hover:after, &:active:after{
         color: $fontColor;
         background-color: $fontColor;
@@ -28,13 +28,28 @@ footer a{
         background-color: $disabled;
     }
 }
+
+.grid a .section-case{
+    &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9,&-10,&-11,&-12,&-13{
+        &__img{
+            border: 2px solid $contrasteColor;
+            &:hover{
+                border: 2px solid $contrasteColorHover;
+            }
+            &:active{
+                border: 2px solid $contrasteColorActive;
+            }
+        }
+    }
+}
+
 ::-webkit-scrollbar{
     width: 15px;
     &-track {
-        background-color: $scrollBackground;
+        background-color: $lightContrasteColor;
     }
     &-thumb {
-        background-color: $scrollBarre;
+        background-color: $contrasteColor;
     }
 }
 .warning, .force-mobile, .footer-list{
@@ -84,17 +99,16 @@ footer a{
     }
 }
 
-.footer-list{
+.footer-list, footer{
     box-shadow: 0px -4px 10px hsla(0, 0%, 0%, 7%);
-    &__el{
-        &--active{
-            fill: $contrasteColor;
-        }
-    }
+}
+
+.footer-list__el--active{
+    fill: $contrasteColor;
 }
 
 .section-1, .section-3, .section-5, .section-7, .section-9, .section-highlighted{
-    background-color: $highlightBakground;
+    background-color: $highlightBackground;
 }
 
 .results-list__el, .liens-list__el{
@@ -103,4 +117,10 @@ footer a{
 
 thead{
     background-color: $tableHead;
+}
+
+.first-table, .second-table, .third-table{
+    *{
+        border: solid 1px $secondMainColor;
+    }
 }

@@ -23,7 +23,7 @@ body, small, li, .rs-tooltip-text{
 .small-title, .section-9__button, .results-text, .highlight-text, .liens-list__el{
     font-size: $fontSize3Mobile;
 }
-.footer a{
+.footer a, .grid-case a{
     text-decoration: none;
     position: relative;
     &:after {
@@ -41,6 +41,14 @@ body, small, li, .rs-tooltip-text{
         &:after {
             transform-origin: bottom left;
             transform: scaleX(1);
+        }
+    }
+}
+
+.section-case{
+    &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9,&-10,&-11,&-12,&-13{
+        &__link:after{
+            display: none;
         }
     }
 }

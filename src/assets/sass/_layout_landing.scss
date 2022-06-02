@@ -7,7 +7,7 @@ body{
     height: 100vh;
 }
 
-.header{
+.header, .case-header{
     width: 300px;
     .logo{
         width: 300px;
@@ -23,6 +23,9 @@ body{
         transform: translateX(-50%);
         width: 147px;
         height: 46px;
+    }
+    .case-title{
+        text-align: center;
     }
 }
 
@@ -43,7 +46,7 @@ body{
     }
 }
 
-.header, .header .logo{
+.header, .header .logo, .case-header, .case-header .logo{
     display: block;
     margin: 0 auto;
 }
@@ -53,6 +56,11 @@ body{
     &-index{
         grid-template-columns: repeat(17, 17fr);
         grid-template-rows: repeat(90, 10vh);
+    }
+    &-case{
+        grid-template-columns: repeat(17, 17fr);
+        grid-template-rows: repeat(200, 10vh);
+        grid-template-rows: 600px 2700px 2100px 1550px 2000px 2750px 1400px 3550px 900px 950px 400px 1600px 1500px;
     }
     .section{
         grid-template-columns: repeat(17, 17fr);
@@ -67,107 +75,172 @@ body{
                 grid-column: 5/17;
             }
         }
-    }
-}
-
-.section{
-    background-repeat: no-repeat;
-    &-2, &-4, &-6, &-8{
-        img{
-            width: 300px;
-            grid-column: 2/17;
-            margin: 100px auto;
-        }
-    }
-    grid-column: 1/18;
-    &-1{
-        grid-template-rows: 200px;
-        grid-row: 1/11;
-        background-image: url(../images/landing/2-deco-1.svg);
-        background-size: 150px;
-        background-position: 125% 113%;
-        &__title{
-            margin-top: 20px;
-        }
-    }
-    &-2{
-        grid-row: 11/21;
-    }
-    &-3{
-        grid-template-rows: 150px;
-        grid-row: 21/31;
-        background-image: url(../images/landing/2-deco-2.svg);
-        background-size: 170px;
-        background-position: -20% 105%;
-        &__title{
-            margin-top: 50px;
-        }
-    }
-    &-4{
-        grid-row: 31/41;
-    }
-    &-5{
-        grid-template-rows: 200px;
-        grid-row: 41/51;
-        background-image: url(../images/landing/2-deco-3.svg);
-        background-size: 170px;
-        background-position: 130% 130%;
-        &__title{
-            margin-top: 60px;
-        }
-    }
-    &-6{
-        grid-row: 51/61;
-    }
-    &-7{
-        grid-template-rows: 100px;
-        grid-row: 61/71;
-        &__el{
-            &:before{
-                content: "";
-                position: absolute;
-                width: 60px;
-                height: 60px;
-                background-image: url(../images/landing/4-bullet.svg);
-                background-size: contain;
-                background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        grid-column: 1/18;
+        &-2, &-4, &-6, &-8{
+            img{   
+                width: 300px;
+                grid-column: 2/17;
+                margin: 100px auto;
             }
-            &2:before{
-                transform: translateX(-65px) translateY(20px);
+        }
+        &-1{
+            grid-template-rows: 200px;
+            grid-row: 1/11;
+            background-image: url(../images/landing/2-deco-1.svg);
+            background-size: 150px;
+            background-position: 125% 113%;
+            &__title{
+                margin-top: 20px;
             }
-            &1:before, &3:before, &4:before{
-                transform: translateX(-65px) translateY(5px);
+        }
+        &-2{
+            grid-row: 11/21;
+        }
+        &-3{
+            grid-template-rows: 150px;
+            grid-row: 21/31;
+            background-image: url(../images/landing/2-deco-2.svg);
+            background-size: 170px;
+            background-position: -20% 105%;
+            &__title{
+                margin-top: 50px;
             }
-            padding: 10px 0;
         }
-        &__title{
-            margin-top: 40px;
+        &-4{
+            grid-row: 31/41;
         }
-        background-image: url(../images/landing/2-deco-4.svg);
-        background-size: 170px;
-        background-position: 125% 105%;
+        &-5{
+            grid-template-rows: 200px;
+            grid-row: 41/51;
+            background-image: url(../images/landing/2-deco-3.svg);
+            background-size: 170px;
+            background-position: 130% 130%;
+            &__title{
+                margin-top: 60px;
+            }
+        }
+        &-6{
+            grid-row: 51/61;
+        }
+        &-7{
+            grid-template-rows: 100px;
+            grid-row: 61/71;
+            &__el{
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: 60px;
+                    height: 60px;
+                    background-image: url(../images/landing/4-bullet.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+                &2:before{
+                    transform: translateX(-65px) translateY(20px);
+                }
+                &1:before, &3:before, &4:before{
+                    transform: translateX(-65px) translateY(5px);
+                }
+                padding: 10px 0;
+            }
+            &__title{
+                margin-top: 40px;
+            }
+            background-image: url(../images/landing/2-deco-4.svg);
+            background-size: 170px;
+            background-position: 125% 105%;
+        }
+        &-8{
+            grid-row: 71/81;
+        }
+        &-9{
+            grid-template-rows: 100px 120px 200px;
+            grid-row: 81/91;
+            &__first-title{
+                margin-top: 40px;
+            }
+            &__second-title{
+                text-align: center;
+            }
+            &__button{
+                width: 147px;
+                height: 38px;
+                justify-self: center;
+            }
+        }
     }
-    &-8{
-        grid-row: 71/81;
-    }
-    &-9{
-        grid-template-rows: 100px 120px 200px;
-        grid-row: 81/91;
-        &__first-title{
-            margin-top: 40px;
+    .section-case{
+        grid-template-columns: repeat(17, 17fr);
+        grid-column: 1/18;
+        a{
+            font-weight: bold;
         }
-        &__second-title{
-            text-align: center;
+        &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9,&-10,&-11,&-12,&-13{
+            &__title{
+                grid-column: 2/17;
+            }
+            &__text, &__ol{
+                grid-column: 4/17;
+            }
+            &__link, &__img, &__ul{
+                grid-column: 5/16;
+                margin: 10px auto;
+            }
+            &__img{
+                width: 100%;
+            }
+            &__ol{
+                margin-left: 20px;
+                *{
+                    padding: 5px 0;
+                }
+            }
         }
-        &__button{
-            width: 147px;
-            height: 38px;
-            justify-self: center;
+        &-1{
+            grid-template-rows: 160px;
+            &__title{
+                margin-top: 100px;
+            }
+        }
+        &-2{
+            grid-template-rows: 55px 50px 200px 350px 140px 170px 300px 600px 320px;
+        }
+        &-3{
+            grid-template-rows: 55px 50px 250px 120px 350px 500px 400px;
+        }
+        &-4{
+            grid-template-rows: 80px 730px 225px;
+        }
+        &-5{
+            grid-template-rows: 50px 250px 100px 200px 450px 230px 180px 180px;
+        }
+        &-6{
+            grid-template-rows: 80px 400px 400px 80px 250px 120px 320px 480px 330px;
+        }
+        &-7{
+            grid-template-rows: 60px 230px;
+        }
+        &-8{
+            grid-template-rows: 60px 1020px;
+        }
+        &-9, &-11{
+            grid-template-rows: 60px;
+        }
+        &-10{
+            grid-template-rows: 60px 130px 260px;
+        }
+        &-12{
+            grid-template-rows: 60px 130px 390px 160px 350px 230px;
+        }
+        &-13{
+            grid-template-rows: 60px 110px 900px;
         }
     }
 }
 
 .footer{
+    position: absolute;
     .small-title{
         padding-left: 20px;
         padding-top: 50px;
