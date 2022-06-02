@@ -422,3 +422,349 @@
         }
     }
 }
+
+//case-study
+@media (min-width : 400px){
+    .grid .section-case{
+        &-2{
+            grid-template-rows: 55px 50px 200px 380px 120px 170px 300px 550px 370px;
+        }
+        &-3{
+            grid-template-rows: 55px 50px 200px 120px 350px 420px 450px;
+        }
+        &-4{
+            grid-template-rows: 80px 650px 255px;
+        }
+        &-5{
+            grid-template-rows: 50px 250px 100px 200px 390px 260px 200px 200px;
+        }
+        &-6{
+            grid-template-rows: 60px 350px 400px 80px 250px 100px 350px 450px 370px;
+        }
+        &-8{
+            grid-template-rows: 60px 920px;
+        }
+        &-13{
+            grid-template-rows: 60px 110px 800px;
+        }
+    }
+    .grid-case{
+        grid-template-rows: 600px 2700px 2000px 1550px 2000px 2750px 1300px 3700px 900px 950px 400px 1600px 1300px;
+    }
+}
+
+@media (min-width : 450px){
+    .grid .section-case{
+        &-2{
+            grid-template-rows: 55px 50px 170px 420px 120px 130px 350px 480px 420px;
+        }
+        &-3{
+            grid-template-rows: 55px 50px 160px 120px 400px 420px 450px;
+        }
+        &-4{
+            grid-template-rows: 80px 550px 280px;
+        }
+        &-5{
+            grid-template-rows: 50px 250px 100px 200px 350px 280px 200px 200px;
+        }
+        &-6{
+            grid-template-rows: 60px 350px 400px 50px 180px 130px 400px 400px 430px;
+        }
+        &-8{
+            grid-template-rows: 60px 800px;
+        }
+        &-10{
+            grid-template-rows: 60px 120px 310px;
+        }
+        &-12{
+            grid-template-rows: 60px 100px 450px 120px 420px 190px;
+        }
+        &-13{
+            grid-template-rows: 60px 110px 700px;
+        }
+    }
+    .grid-case{
+        grid-template-rows: 600px 2800px 2000px 1470px 2000px 2750px 1300px 3900px 800px 950px 400px 1600px 1200px;
+    }
+}
+
+@media (min-width : 500px){
+    .grid .section-case{
+        &-2{
+            grid-template-rows: 55px 50px 140px 490px 120px 130px 430px 400px 470px;
+        }
+        &-3{
+            grid-template-rows: 55px 50px 140px 100px 460px 380px 520px;
+        }
+        &-5{
+            grid-template-rows: 50px 250px 100px 200px 310px 310px 230px 230px;
+        }
+        &-6{
+            grid-template-rows: 60px 260px 450px 50px 180px 100px 440px 360px 480px;
+        }
+        &-8{
+            grid-template-rows: 60px 700px;
+        }
+        &-12{
+            grid-template-rows: 60px 100px 500px 160px 450px 190px;
+        }
+    }
+    .grid-case{
+        grid-template-rows: 500px 2900px 2100px 1470px 2000px 2750px 1300px 4150px 800px 880px 350px 1750px 1200px;
+    }
+}
+
+@media (min-width : 550px){
+    .grid .section-case{
+        &-3{
+            grid-template-rows: 55px 50px 140px 100px 460px 290px 580px;
+        }
+        &-4{
+            grid-template-rows: 80px 450px 320px;
+        }
+        &-5{
+            grid-template-rows: 50px 180px 120px 200px 280px 330px 250px 250px;
+        }
+        &-6{
+            grid-template-rows: 60px 240px 500px 50px 150px 80px 470px 300px 500px;
+        }
+        &-10{
+            grid-template-rows: 60px 100px 350px;
+        }
+        &-12{
+            grid-template-rows: 60px 100px 550px 160px 500px 150px;
+        }
+    }
+    .grid-case{
+        grid-template-rows: 500px 2900px 2100px 1470px 2000px 2750px 1100px 4450px 700px 880px 350px 1850px 1200px;
+    }
+}
+
+@media (min-width : 600px){
+    .grid .section-case{
+        &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9,&-10,&-11,&-12,&-13{
+            &__text, &__ol{
+                grid-column: 4/16;
+            }
+            &__link, &__img, &__ul{
+                grid-column: 5/15;
+            }
+        }
+    }
+}
+
+@media (min-width : 650px){
+    .grid .section-case{
+        &-2{
+            grid-template-rows: 55px 50px 120px 520px 100px 130px 430px 350px 530px;
+        }
+        &-3{
+            grid-template-rows: 55px 50px 140px 60px 500px 290px 600px;
+        }
+        &-4{
+            grid-template-rows: 80px 420px 360px;
+        }
+        &-5{
+            grid-template-rows: 50px 180px 130px 200px 260px 350px 260px 270px;
+        }
+    }
+    .grid-case{
+        grid-template-rows: 500px 3050px 2100px 1650px 2100px 2750px 1100px 4650px 700px 880px 350px 1850px 1200px;
+    }
+}
+
+@media (min-width : 700px){
+    .grid .section-case{
+        &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9,&-10,&-11,&-12,&-13{
+            &__text, &__ol{
+                grid-column: 5/15;
+            }
+            &__link, &__img, &__ul{
+                grid-column: 5/13;
+            }
+        }
+        &-1{
+            grid-template-rows: 180px;
+        }
+        &-2{
+            grid-template-rows: 55px 70px 160px 520px 100px 130px 430px 450px 450px;
+        }
+        &-3{
+            grid-template-rows: 55px 50px 140px 120px 440px 340px 550px;
+        }
+        &-4{
+            grid-template-rows: 80px 500px 320px;
+        }
+        &-5{
+            grid-template-rows: 50px 180px 120px 200px 320px 330px 250px 250px;
+        }
+        &-6{
+            grid-template-rows: 60px 280px 480px 50px 170px 120px 470px 370px 470px;
+        }
+    }
+    .grid-case{
+        grid-template-rows: 500px 3050px 2100px 1650px 2100px 2750px 1200px 4250px 700px 980px 400px 1850px 1200px;
+    }
+}
+
+@media (min-width : 750px){
+    .grid .section-case{
+        &-2{
+            grid-template-rows: 55px 70px 160px 520px 100px 130px 430px 450px 500px;
+        }
+    }
+    .grid-case{
+        grid-template-rows: 500px 3050px 2100px 1650px 2100px 2750px 1200px 4400px 700px 980px 400px 1850px 1200px;
+    }
+}
+
+@media (min-width : 800px){
+    .grid .section-case{
+        &-2{
+            grid-template-rows: 70px 70px 300px 520px 200px 250px 430px 800px 520px;
+        }
+        &-3{
+            grid-template-rows: 55px 50px 240px 140px 540px 640px 620px;
+        }
+        &-4{
+            grid-template-rows: 80px 900px 350px;
+        }
+        &-5{
+            grid-template-rows: 50px 380px 140px 210px 520px 370px 280px 280px;
+        }
+        &-6{
+            grid-template-rows: 60px 480px 540px 50px 280px 140px 500px 600px 530px;
+        }
+        &-7{
+            grid-template-rows: 100px 300px;
+        }
+        &-8{
+            grid-template-rows: 90px 1300px;
+        }
+        &-9, &-11{
+            grid-template-rows: 70px;
+        }
+        &-10{
+            grid-template-rows: 80px 190px 400px;
+        }
+        &-12{
+            grid-template-rows: 80px 150px 550px 240px 500px 250px;
+        }
+        &-13{
+            grid-template-rows: 80px 150px 1000px;
+        }
+    }
+    .grid-case{
+        grid-template-rows: 750px 3900px 2720px 2100px 2700px 3580px 1730px 5400px 1200px 1350px 600px 2050px 1700px;
+    }
+}
+
+@media (min-width : 900px){
+    .grid .section-case{
+        &-2{
+            grid-template-rows: 70px 70px 220px 580px 180px 210px 480px 650px 600px;
+        }
+        &-3{
+            grid-template-rows: 55px 50px 240px 140px 540px 540px 700px;
+        }
+        &-4{
+            grid-template-rows: 80px 750px 400px;
+        }
+        &-5{
+            grid-template-rows: 50px 300px 140px 250px 500px 400px 300px 300px;
+        }
+        &-6{
+            grid-template-rows: 60px 450px 570px 50px 280px 140px 550px 580px 580px;
+        }
+        &-8{
+            grid-template-rows: 90px 1150px;
+        }
+        &-12{
+            grid-template-rows: 80px 150px 620px 230px 600px 250px;
+        }
+    }
+    .grid-case{
+        grid-template-rows: 750px 3900px 2720px 2100px 2700px 3680px 1730px 5200px 1100px 1350px 500px 2250px 1700px;
+    }
+}
+
+@media (min-width : 1000px){
+    .grid .section-case{
+        &-2{
+            grid-template-rows: 70px 70px 220px 650px 150px 210px 520px 600px 650px;
+        }
+        &-3{
+            grid-template-rows: 55px 50px 180px 140px 600px 480px 750px;
+        }
+        &-4{
+            grid-template-rows: 80px 700px 430px;
+        }
+        &-5{
+            grid-template-rows: 50px 250px 160px 250px 450px 430px 330px 330px;
+        }
+        &-6{
+            grid-template-rows: 60px 400px 620px 50px 280px 140px 600px 500px 620px;
+        }
+        &-10{
+            grid-template-rows: 80px 120px 450px;
+        }
+        &-12{
+            grid-template-rows: 80px 150px 720px 230px 600px 250px;
+        }
+    }
+    .grid-case{
+        grid-template-rows: 750px 4000px 2720px 2100px 2700px 3680px 1730px 5000px 1000px 1300px 500px 2500px 1700px;
+    }
+}
+
+@media (min-width : 1100px){
+    .grid .section-case{
+        &-2{
+            grid-template-rows: 70px 70px 200px 680px 120px 170px 580px 550px 730px;
+        }
+        &-3{
+            grid-template-rows: 55px 50px 180px 100px 680px 480px 850px;
+        }
+        &-4{
+            grid-template-rows: 80px 650px 500px;
+        }
+        &-5{
+            grid-template-rows: 50px 250px 160px 250px 400px 480px 350px 350px;
+        }
+        &-6{
+            grid-template-rows: 60px 350px 700px 50px 200px 140px 700px 450px 720px;
+        }
+        &-8{
+            grid-template-rows: 90px 900px;
+        }
+        &-12{
+            grid-template-rows: 80px 150px 720px 200px 700px 250px;
+        }
+    }
+    .grid-case{
+        grid-template-rows: 750px 4200px 3000px 2200px 2800px 3800px 1450px 5000px 1000px 1300px 500px 2500px 1700px;
+    }
+}
+
+@media (min-width : 1200px){
+    .grid .section-case{
+        &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9,&-10,&-11,&-12,&-13{
+            &__text, &__ol{
+                grid-column: 4/13;
+            }
+            &__link, &__img, &__ul{
+                grid-column: 7/13;
+            }
+        }
+    }
+}
+
+@media (min-width : 1400px){
+    .grid .section-case{
+        &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9,&-10,&-11,&-12,&-13{
+            &__text, &__ol{
+                grid-column: 4/11;
+            }
+        }
+    }
+}
