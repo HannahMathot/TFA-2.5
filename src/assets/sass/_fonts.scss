@@ -23,25 +23,21 @@ body, small, li, .rs-tooltip-text{
 .small-title, .section-9__button, .results-text, .highlight-text, .liens-list__el{
     font-size: $fontSize3Mobile;
 }
-.footer a, .grid-case a{
+.footer a, .grid-case a, .grid-credits a{
     text-decoration: none;
     position: relative;
     &:after {
         content:'';
         position: absolute;
         width: 100%;
-        height: 1.5px;
+        height: 2px;
         bottom: -5px;
         left: 0;
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.3s;
+        z-index: -1;
     }
-    &:hover {
-        &:after {
-            transform-origin: bottom left;
-            transform: scaleX(1);
-        }
+    &:hover:after{
+        height: 35px;
+        transition: 0.1s;
     }
 }
 

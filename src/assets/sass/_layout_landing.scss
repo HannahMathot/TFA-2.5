@@ -7,7 +7,7 @@ body{
     height: 100vh;
 }
 
-.header, .case-header{
+.header, .case-header, .credits-header{
     width: 300px;
     .logo{
         width: 300px;
@@ -24,7 +24,7 @@ body{
         width: 147px;
         height: 46px;
     }
-    .case-title{
+    .case-title, .credits-title{
         text-align: center;
     }
 }
@@ -46,7 +46,7 @@ body{
     }
 }
 
-.header, .header .logo, .case-header, .case-header .logo{
+.header, .header .logo, .case-header, .case-header .logo, .credits-header, .credits-header .logo{
     display: block;
     margin: 0 auto;
 }
@@ -60,7 +60,19 @@ body{
     &-case{
         grid-template-columns: repeat(17, 17fr);
         grid-template-rows: repeat(200, 10vh);
-        grid-template-rows: 600px 2700px 2100px 1550px 2000px 2750px 1400px 3550px 900px 950px 400px 1600px 1500px;
+        grid-template-rows: 600px 2700px 2100px 1550px 2000px 2750px 1400px 3670px 900px 950px 400px 1600px 1500px;
+    }
+    &-credits{
+        grid-template-columns: repeat(17, 17fr);
+        grid-column: 1/18;
+        grid-template-rows: repeat(200, 10vh);
+        grid-template-rows: 40px 220px 50px 100px 50px 260px 50px 150px 50px 220px;
+        .small-title{
+            grid-column: 3/17;
+        }
+        .credits-list{
+            grid-column: 4/13;
+        }
     }
     .section{
         grid-template-columns: repeat(17, 17fr);
@@ -173,9 +185,6 @@ body{
     .section-case{
         grid-template-columns: repeat(17, 17fr);
         grid-column: 1/18;
-        a{
-            font-weight: bold;
-        }
         &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9,&-10,&-11,&-12,&-13{
             &__title{
                 grid-column: 2/17;
@@ -187,7 +196,7 @@ body{
                 grid-column: 5/16;
                 margin: 10px auto;
             }
-            &__link, &__img{
+            &__link, &__img, &__ul{
                 width: 100%;
             }
             &__ol{
@@ -213,7 +222,7 @@ body{
             grid-template-rows: 80px 730px 225px;
         }
         &-5{
-            grid-template-rows: 50px 250px 100px 200px 450px 230px 180px 180px;
+            grid-template-rows: 50px 250px 250px 450px 450px 230px 180px 180px;
         }
         &-6{
             grid-template-rows: 80px 400px 400px 80px 250px 120px 320px 480px 330px;

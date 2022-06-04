@@ -4,10 +4,13 @@ body{
 body, ul li, a{
     color: $fontColor;
 }
-footer a, .grid-case a{
-    &:hover:after, &:active:after{
+footer a, .grid-case a, .grid-credits a{
+    &:after{
         color: $fontColor;
-        background-color: $fontColor;
+        background-color: $contrasteColor
+    }
+    &:hover:after{
+        border-bottom: 2px solid $contrasteColor;
     }
 }
 .next, .warning__next, .au-prototype, .section-9__button{
