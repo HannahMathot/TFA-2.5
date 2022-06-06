@@ -4,25 +4,23 @@
 
 // variables
 //font family
-$fontBody: 'Bona Nova', serif;
+$fontBody: 'Roboto', sans-serif;
 $fontTitle: 'Lora', serif;
 
 //font size
 //hierarchie = 1.2
-$fontSize1Mobile: 16px;
-$fontSize2Mobile: 19.2px;
-$fontSize3Mobile: 23.04px;
-$fontSize4Mobile: 27.64px;
-$fontSize5Mobile: 33.17px;
+$fontSize1Mobile: 16px; //pas utilisé
+$fontSize2Mobile: 19.2px; 
+$fontSize3Mobile: 23.04px; 
+$fontSize4Mobile: 27.64px; 
+$fontSize5Mobile: 33.17px; 
 $fontSize6Mobile: 39.81px;
 $fontSize7Mobile: 47.77px;
-$fontSize8Mobile: 57.33px;
 
 //hierarchie = 1.414
 $fontSize1Desktop: 20px;
 $fontSize2Desktop: 28.28px;
 $fontSize3Desktop: 39.98px;
-$fontSize4Desktop: 56.54px;
 
 //font color
 $fontColor: #000000;

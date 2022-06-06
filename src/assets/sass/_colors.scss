@@ -4,7 +4,7 @@ body{
 body, ul li, a{
     color: $fontColor;
 }
-footer a, .grid-case a, .grid-credits a{
+footer a, .main-case a, .main-credits a, .main-uikit a{
     &:after{
         color: $fontColor;
         background-color: $contrasteColor
@@ -13,12 +13,25 @@ footer a, .grid-case a, .grid-credits a{
         border-bottom: 2px solid $contrasteColor;
     }
 }
-.next, .warning__next, .au-prototype, .section-9__button{
+
+.a--visited a:visited{
+    &:after{
+        background-color: $visitedColor
+    }
+    &:hover:after{
+        border-bottom: 2px solid $visitedColor;
+    }
+}
+
+.next, .warning__next, .au-prototype, .section-5__button{
     color: $fontColor;
     background-color: $backgroundColor;
     outline: 2px solid $contrasteColor;
     border: none;
+    padding: 5px;
+    border-radius: 5px;
     &:hover{
+        outline: 2px solid $contrasteColorHover;
         outline-offset: 3px;
         transition: ease-in 0.1s;
         color: $fontColor;
@@ -32,8 +45,8 @@ footer a, .grid-case a, .grid-credits a{
     }
 }
 
-.grid a .section-case{
-    &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9,&-10,&-11,&-12,&-13{
+.flex a .section-case{
+    &-1,&-2,&-3,&-4,&-5{
         &__img{
             border: 2px solid $contrasteColor;
             &:hover{
@@ -110,7 +123,7 @@ footer a, .grid-case a, .grid-credits a{
     fill: $contrasteColor;
 }
 
-.section-1, .section-3, .section-5, .section-7, .section-9, .section-highlighted{
+.section-1, .section-3, .section-5, .section-highlighted{
     background-color: $highlightBackground;
 }
 

@@ -1,14 +1,49 @@
 body{
     overflow-x: hidden;
 }
-
-.header, .footer{
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &-credits, &-uikit{
+        *{
+            width: 300px;
+            margin: 2px 0;
+        }
+        .small-title{
+            margin: 30px 0 0 0;
+        }
+        p.credits-list{
+            margin: 0 0 50px 0;
+        }
+    }
+}
+.header, .footer, .section{
     width: 100vw;
     height: 100vh;
 }
+.header, .section{
+    .description, .medium-title, .logo, &-1 *, &-2 *, &-3 *, &-4 *, &-5 *, &-case *{
+        width: 300px;
+    }
+    .medium-title{
+        padding-bottom: 20px;
+    }
+    .au-prototype{
+        margin-top: 60px;
+        width: 147px;
+        height: 46px;
+    }
+}
 
-.header, .case-header, .credits-header{
-    width: 300px;
+.au-prototype, .section-5__button{
+    text-align: center;
+}
+
+.case-header, .credits-header, .uikit-header{
+    width: 100vw;
+    justify-content: center;
     .logo{
         width: 300px;
         padding-top: 95px;
@@ -16,251 +51,106 @@ body{
     .medium-title{
         padding-bottom: 10px;
     }
-    .au-prototype{
-        position: absolute;
-        bottom: 15%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 147px;
-        height: 46px;
-    }
-    .case-title, .credits-title{
-        text-align: center;
-    }
 }
 
-.au-prototype, .section-9__button{
-    text-align: center;
-    animation: auPrototype ease-in 1.5s infinite;
-}
-
-@keyframes auPrototype{
-    0%{
-        outline-offset: 0px;
+.section{
+    background-repeat: no-repeat;
+    &-1{
+        background-image: url(../images/landing/2-deco-1.svg);
+        background-size: 150px;
+        background-position: 125% 113%;
+        &__title{
+            padding-bottom: 20px;
+        }
     }
-    50%{
-        outline-offset: 5px;
+    &-2{
+        background-image: url(../images/landing/2-deco-2.svg);
+        background-size: 170px;
+        background-position: -20% 105%;
+        &__title{
+            padding-bottom: 20px;
+        }
     }
-    100%{
-        outline-offset: 0px;
+    &-3{
+        background-image: url(../images/landing/2-deco-3.svg);
+        background-size: 170px;
+        background-position: 130% 130%;
+        &__title{
+            padding-bottom: 20px;
+        }
     }
-}
-
-.header, .header .logo, .case-header, .case-header .logo, .credits-header, .credits-header .logo{
-    display: block;
-    margin: 0 auto;
-}
-
-.grid{
-    display: grid;
-    &-index{
-        grid-template-columns: repeat(17, 17fr);
-        grid-template-rows: repeat(90, 10vh);
+    &-4{
+        &__list{
+            width: 250px;
+        }
+        &__el{
+            width: 250px;
+            transform: translateX(32.5px);
+            &:before{
+                content: "";
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                background-image: url(../images/landing/4-bullet.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            &2:before{
+                transform: translateX(-65px) translateY(20px);
+            }
+            &1:before, &3:before, &4:before{
+                transform: translateX(-65px) translateY(5px);
+            }
+            padding: 10px 0;
+        }
+        &__title{
+            padding-bottom: 20px;
+        }
+        background-image: url(../images/landing/2-deco-4.svg);
+        background-size: 170px;
+        background-position: 125% 105%;
+    }
+    &-5{
+        &__button{
+            width: 147px;
+            height: 38px;
+            margin-top: 50px;
+        }
     }
     &-case{
-        grid-template-columns: repeat(17, 17fr);
-        grid-template-rows: repeat(200, 10vh);
-        grid-template-rows: 600px 2700px 2100px 1550px 2000px 2750px 1400px 3670px 900px 950px 400px 1600px 1500px;
-    }
-    &-credits{
-        grid-template-columns: repeat(17, 17fr);
-        grid-column: 1/18;
-        grid-template-rows: repeat(200, 10vh);
-        grid-template-rows: 40px 220px 50px 100px 50px 260px 50px 150px 50px 220px;
-        .small-title{
-            grid-column: 3/17;
+        margin: 50px 0px;
+        .small-title, .medium-title{
+            margin: 10px 0;
         }
-        .credits-list{
-            grid-column: 4/13;
-        }
-    }
-    .section{
-        grid-template-columns: repeat(17, 17fr);
-        &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9{
-            &__title, &__first-title, &__second-title, &__button{
-                grid-column: 2/17;
-            }
-            &__text{
-                grid-column: 4/17;
-            }
-            &__list{
-                grid-column: 5/17;
-            }
-        }
-        background-repeat: no-repeat;
-        grid-column: 1/18;
-        &-2, &-4, &-6, &-8{
-            img{   
-                width: 300px;
-                grid-column: 2/17;
-                margin: 100px auto;
-            }
-        }
-        &-1{
-            grid-template-rows: 200px;
-            grid-row: 1/11;
-            background-image: url(../images/landing/2-deco-1.svg);
-            background-size: 150px;
-            background-position: 125% 113%;
-            &__title{
-                margin-top: 20px;
-            }
-        }
-        &-2{
-            grid-row: 11/21;
-        }
-        &-3{
-            grid-template-rows: 150px;
-            grid-row: 21/31;
-            background-image: url(../images/landing/2-deco-2.svg);
-            background-size: 170px;
-            background-position: -20% 105%;
-            &__title{
-                margin-top: 50px;
-            }
-        }
-        &-4{
-            grid-row: 31/41;
-        }
-        &-5{
-            grid-template-rows: 200px;
-            grid-row: 41/51;
-            background-image: url(../images/landing/2-deco-3.svg);
-            background-size: 170px;
-            background-position: 130% 130%;
-            &__title{
-                margin-top: 60px;
-            }
-        }
-        &-6{
-            grid-row: 51/61;
-        }
-        &-7{
-            grid-template-rows: 100px;
-            grid-row: 61/71;
-            &__el{
-                &:before{
-                    content: "";
-                    position: absolute;
-                    width: 60px;
-                    height: 60px;
-                    background-image: url(../images/landing/4-bullet.svg);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                }
-                &2:before{
-                    transform: translateX(-65px) translateY(20px);
-                }
-                &1:before, &3:before, &4:before{
-                    transform: translateX(-65px) translateY(5px);
-                }
-                padding: 10px 0;
-            }
-            &__title{
-                margin-top: 40px;
-            }
-            background-image: url(../images/landing/2-deco-4.svg);
-            background-size: 170px;
-            background-position: 125% 105%;
-        }
-        &-8{
-            grid-row: 71/81;
-        }
-        &-9{
-            grid-template-rows: 100px 120px 200px;
-            grid-row: 81/91;
-            &__first-title{
-                margin-top: 40px;
-            }
-            &__second-title{
-                text-align: center;
-            }
-            &__button{
-                width: 147px;
-                height: 38px;
-                justify-self: center;
-            }
-        }
-    }
-    .section-case{
-        grid-template-columns: repeat(17, 17fr);
-        grid-column: 1/18;
-        &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9,&-10,&-11,&-12,&-13{
-            &__title{
-                grid-column: 2/17;
-            }
-            &__text, &__ol{
-                grid-column: 4/17;
-            }
-            &__link, &__img, &__ul{
-                grid-column: 5/16;
-                margin: 10px auto;
-            }
-            &__link, &__img, &__ul{
-                width: 100%;
-            }
-            &__ol{
-                margin-left: 20px;
-                *{
-                    padding: 5px 0;
-                }
-            }
-        }
-        &-1{
-            grid-template-rows: 160px;
-            &__title{
-                margin-top: 100px;
-            }
-        }
-        &-2{
-            grid-template-rows: 55px 50px 200px 350px 140px 170px 300px 600px 320px;
-        }
-        &-3{
-            grid-template-rows: 55px 50px 250px 120px 350px 500px 400px;
-        }
-        &-4{
-            grid-template-rows: 80px 730px 225px;
-        }
-        &-5{
-            grid-template-rows: 50px 250px 250px 450px 450px 230px 180px 180px;
-        }
-        &-6{
-            grid-template-rows: 80px 400px 400px 80px 250px 120px 320px 480px 330px;
-        }
-        &-7{
-            grid-template-rows: 60px 230px;
-        }
-        &-8{
-            grid-template-rows: 60px 1020px;
-        }
-        &-9, &-11{
-            grid-template-rows: 60px;
-        }
-        &-10{
-            grid-template-rows: 60px 130px 260px;
-        }
-        &-12{
-            grid-template-rows: 60px 130px 390px 160px 350px 230px;
-        }
-        &-13{
-            grid-template-rows: 60px 110px 900px;
+        img{
+            margin: 30px 0;
         }
     }
 }
 
 .footer{
-    position: absolute;
-    .small-title{
-        padding-left: 20px;
-        padding-top: 50px;
+    .projet, .prototypes, .small-title{
+        width: 200px;
+        padding: 0;
+        margin: 0;
     }
-    .liens-pratiques, .prototypes{
-        padding-left: 70px;
+    .projet, .prototypes{
+        padding-bottom: 15px;
+        &__li{
+            padding: 8px 0px;
+        }
     }
-    .copyright{
-        display: inline-block;
-        padding-top: 120px;
-        padding-left: 30px;
+    .copyright-annee{
+        width: 260px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -598vh;
+        &-case, &-credits, &-uikit{
+            position: absolute;
+            bottom: inherit;
+            transform: translateY(45vh);
+        }
     }
     .dwm{
         background-image: url(../images/landing/5-dwm.svg);
@@ -273,6 +163,10 @@ body{
         text-indent: 200%;
         white-space: nowrap;
         overflow: hidden;
-        transform: translateX(5px) translateY(7px);
+        transform: translateX(5px) translateY(5px);
     }
+}
+
+.main-uikit{
+    margin: 50px 0;
 }

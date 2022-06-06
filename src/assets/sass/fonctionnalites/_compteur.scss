@@ -2,8 +2,9 @@
     font-size: $fontSize4Mobile;
     background-position-y: center;
     &--lessive{
+        font-size: $fontSize3Mobile;
         *{
-            top: 208px;
+            top: 214px;
         }
         button{
             background-color: transparent;
@@ -45,7 +46,7 @@
             background-image: url(../images/prototype/autres-elements/6-tablette-value.svg);
             transform: translateY(460px) translateX(-50%) translateX(95px);
             text-align: center;
-            background-position-y: 30%;
+            background-position-y: 20%;
         }
         .compteur__add{
             background-image: url(../images/prototype/autres-elements/7-tablette-plus.svg);
@@ -54,18 +55,17 @@
         }
     }
     &--desodorisant{
-        *{
+        .compteur__remove{
+            transform: translateY(256px) translateX(-50%) translateX(-130px);
             font-size: $fontSize7Mobile;
         }
-        .compteur__remove{
-            transform: translateY(255px) translateX(-50%) translateX(-130px);
-        }
         .compteur__value{
-            transform: translateY(255px) translateX(-50%) translateX(-90px);
+            transform: translateY(261px) translateX(-50%) translateX(-90px);
             font-size: $fontSize5Mobile;
         }
         .compteur__add{
-            transform: translateY(253px) translateX(-50%) translateX(-50px);
+            transform: translateY(264px) translateX(-50%) translateX(-50px);
+            font-size: $fontSize5Mobile;
         }
     }
     &--lessive, &--tablettes, &--desodorisant{

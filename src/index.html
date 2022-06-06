@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/jpg" href="assets/images/1-favicone.svg"/>    
-    <!--<meta name="description" content="description">-->
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/1-favicone.svg"/>
+    <meta name="description" content="Avec Efficac'éco, calculez le prix de vos produits ménagers industriels sur un an et découvrez des recettes écologiques efficaces pour les remplacer et en tirer un gain d'argent.">
     <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary_large_image" >
-    <meta name="twitter:site" content="@DwmHannah" >
-    <meta name="twitter:creator" content="@DwmHannah" >
-    <!-- <meta name="twitter:title" content="titre de la page"> -->
-    <!-- <meta name="twitter:description" content="description" > -->
-    <!-- <meta name="twitter:image" content="http://hannah-mathot.be/projets/lien-du-logo-de-partage" > -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@DwmHannah">
+    <meta name="twitter:creator" content="@DwmHannah">
+    <meta name="twitter:title" content="Accueil - Efficac'éco">
+    <meta name="twitter:description" content="Avec Efficac'éco, calculez le prix de vos produits ménagers industriels sur un an et découvrez des recettes écologiques efficaces pour les remplacer et en tirer un gain d'argent.">
+    <meta name="twitter:image" content="http://hannah-mathot.be/projets/tfa/assets/images/3-logo-partage.png">
     <!-- Open Graph data -->
-    <!-- <meta property="og:site_name" content="titre de la page" /> -->
-    <!-- <meta property="og:title" content="titre de la page" /> -->
-    <!-- <meta property="og:description" content="description" /> -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.hannah-mathot.be/" />
-    <!-- <meta property="og:image" content="http://hannah-mathot.be/projets/lien-du-logo-de-partage" /> -->
-    <!-- <meta property="og:image:width" content="largeur (juste le nombre, pas le mot px en plus)"> -->
-    <!-- <meta property="og:image:height" content="hauteur (L ou H = max 140 px)"> -->
-    <!-- <title>titre de la page</title> -->
+    <meta property="og:site_name" content="Efficac'éco"/>
+    <meta property="og:title" content="Accueil - Efficac'éco"/>
+    <meta property="og:description" content="Avec Efficac'éco, calculez le prix de vos produits ménagers industriels sur un an et découvrez des recettes écologiques efficaces pour les remplacer et en tirer un gain d'argent."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.hannah-mathot.be/projets/tfa/index.html"/>
+    <meta property="og:image" content="http://hannah-mathot.be/projets/tfa/assets/images/3-logo-partage.png"/>
+    <meta property="og:image:width" content="140">
+    <meta property="og:image:height" content="33">
+    <title>Accueil - Efficac'éco</title>
 	<!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<!-- CSS -->
     <link href="assets/css/main.css" rel="stylesheet">
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="assets/js/anim.min.js" defer></script>
     <script src="assets/js/main.min.js" defer></script>
 </head>
 <body>
-    <header class="header">
+    <header class="flex header">
         <h1><img src="assets/images/2-logo.svg" alt="logo d'efficac'eco" class="logo"></h1>
         <h2 class="medium-title">L’écologie à petit prix</h2>
         <small class="description">
@@ -43,8 +44,8 @@
         <a href="calculs.html" class="au-prototype">C'est parti</a>
     </header>
 
-    <main class="grid grid-index">
-        <section class="grid section section-1">
+    <main>
+        <section class="flex section section-1">
             <h2 class="medium-title section-1__title">Calculez votre utilisation de produits ménagers industriels en vous amusant</h2>
             <p class="section-1__text">
                 Avant d’avoir accès à nos recettes, une interface de jeu vous attend 
@@ -52,94 +53,88 @@
                 industriels selon votre fréquence d'utilisation.
             </p>
         </section>
-        <section class="grid section section-2">
-            <img src="assets/images/landing/3-phone-1.svg" alt="interface de calcul" class="section-2__img">
-        </section>
-        <section class="grid section section-3">
-            <h2 class="medium-title section-3__title">Une comparaison de prix</h2>
-            <p class="section-3__text">
+        <section class="flex section section-2">
+            <h2 class="medium-title section-2__title">Une comparaison de prix</h2>
+            <p class="section-2__text">
                 Une fois les calculs terminés, notre site vous montre une 
                 estimation de ce vous devriez payer sur une année pour vos produits ménagers. 
                 Il compare ce prix avec celui de nos recettes écologiques afin de vous montrer le 
                 gain d’argent que vous pourriez en tirer si vous les utilisiez.
             </p>
         </section>
-        <section class="grid section section-4">
-            <img src="assets/images/landing/3-phone-1.svg" alt="affichage du gain d'argent" class="section-4__img">
-        </section>
-        <section class="grid section section-5">
-            <h2 class="medium-title section-5__title">Des recettes écologiques de remplacement</h2>
-            <p class="section-5__text">
+        <section class="flex section section-3">
+            <h2 class="medium-title section-3__title">Des recettes écologiques de remplacement</h2>
+            <p class="section-3__text">
                 Pour chaque produit ménager que vous possédez, Efficac'éco vous propose des 
-                recettes écologiques à réaliser vous même. Ces dernières sont écologiques, moins chères
-                que leur équivalent industriel et efficaces !
+                recettes écologiques à réaliser vous-même. Ces dernières sont écologiques, moins chères
+                que leur équivalent industriel et efficaces&#8239;!
             </p>
         </section>
-        <section class="grid section section-6">
-            <img src="assets/images/landing/3-phone-1.svg" alt="recettes d'efficac'eco" class="section-6__img">
-        </section>
-        <section class="grid section section-7">
-            <h2 class="medium-title section-7__title">Des bases de données</h2>
-            <ul class="section-7__list">
-                <li class="section-7__el section-7__el1">de produits ménagers de vos magasins industriels habituels</li>
-                <li class="section-7__el section-7__el2">de recettes écologiques à prix abordable que vous pouvez réaliser chez vous</li>
-                <li class="section-7__el section-7__el3">d’ingrédients écologiques pour vos recettes</li>
-                <li class="section-7__el section-7__el4">complètes et mises à jour chaque trimestre</li>
+        <section class="flex section section-4">
+            <h2 class="medium-title section-4__title">Des bases de données</h2>
+            <ul class="section-4__list">
+                <li class="section-4__el section-4__el1">de produits ménagers de vos magasins industriels habituels</li>
+                <li class="section-4__el section-4__el2">de recettes écologiques à prix abordable que vous pouvez réaliser chez vous</li>
+                <li class="section-4__el section-4__el3">d’ingrédients écologiques pour vos recettes</li>
+                <li class="section-4__el section-4__el4">complètes et mises à jour chaque trimestre</li>
             </ul>
         </section>
-        <section class="grid section section-8">
-            <img src="assets/images/landing/3-phone-1.svg" alt="bases de donnees" class="section-8__img">
-        </section>
-        <section class="grid section section-9">
-            <h2 class="medium-title section-9__first-title">Mais surtout...</h2>
-            <h2 class="medium-title section-9__second-title">Des utilisateurs altruistes&#8239;!</h2>
-            <p class="section-9__text">
+        <section class="flex section section-5">
+            <h2 class="medium-title section-5__first-title">Mais surtout...</h2>
+            <h2 class="medium-title section-5__second-title">Des utilisateurs altruistes&#8239;!</h2>
+            <p class="section-5__text">
                 Grâce à leurs retours et leurs conseils, ils égaient la plateforme en 
                 permettant aux recettes d’évoluer et de s’améliorer&#8239;!
             </p>
-            <div class="section-9__button"><a href="calculs.html">Rejoignez-les</a></div>
+            <div class="section-5__button"><a href="calculs.html">Rejoignez-les</a></div>
         </section>
     </main>
     
-    <footer class="footer">
-        <h3 class="small-title footer__title1">Derrière le projet</h3>
-        <ul class="liens-pratiques">
-            <li class="liens-pratiques__li">
-                <a href="case-study.html" class="liens-pratiques__lien" title="Voir le Case-Study">Case-Study</a>
-            </li>
-            <li class="liens-pratiques__li">
-                <a href="credits.html" class="liens-pratiques__lien" title="Voir les crédits">Crédits</a>
-            </li>
-            <li class="liens-pratiques__li">
-                <a href="ui-kit.html" class="liens-pratiques__lien" title="Voir le UI-kit">UI-kit</a>
-            </li>
-            <li class="liens-pratiques__li">
-                <a href="https://drive.google.com/drive/folders/1ct9Jh4zkVCSL1Pib80nFl8Ze2wfRjKMS?usp=sharing" class="liens-pratiques__lien" title="Voir les bases de données">Bases de données</a>
-            </li>
-        </ul>
-        <h3 class="small-title footer__title2">Prototypes</h3>
-        <ul class="prototypes">
-            <li class="prototypes__li">
-                <a href="https://www.figma.com/file/VLIAgNWoRVNWiC9OFqL3W9/TFA---1er-prototype?node-id=0%3A1" class="prototypes__lien" title="Voir le prototype">1ère version</a>
-            </li>
-            <li class="prototypes__li">
-                <a href="https://www.figma.com/file/VLIAgNWoRVNWiC9OFqL3W9/TFA---1er-prototype?node-id=62%3A2" class="prototypes__lien" title="Voir le prototype">2ème version</a>
-            </li>
-            <li class="prototypes__li">
-                <a href="https://www.figma.com/file/VLIAgNWoRVNWiC9OFqL3W9/TFA---1er-prototype?node-id=215%3A3167" class="prototypes__lien" title="Voir le prototype">3ème version</a>
-            </li>
-            <li class="prototypes__li">
-                <a href="https://www.figma.com/file/VLIAgNWoRVNWiC9OFqL3W9/TFA---1er-prototype?node-id=419%3A2" class="prototypes__lien" title="Voir le prototype">4ème version</a>
-            </li>
-            <li class="prototypes__li">
-                <a href="https://www.figma.com/file/VLIAgNWoRVNWiC9OFqL3W9/TFA---1er-prototype?node-id=601%3A2" class="prototypes__lien" title="Voir le prototype">5ème version</a>
-            </li>
-        </ul>
-        <small class="copyright">
-            ©&#8239;<span class="copyright__annee">Année</span> -
-            <a href="index.html" title="Aller à l'accueil">Hannah Mathot</a>
-        </small>
-        <a href="http://www.dwm.re/" title="Aller sur la page DWT/DWM" class="dwm">DWM</a>       
+    <footer class="flex footer">
+        <div class="projet">
+            <h3 class="small-title footer__title1">Derrière le projet</h3>
+            <ul>
+                <li class="projet__li">
+                    <a href="case-study.html" class="projet__lien" title="Voir le Case-Study">Case-Study</a>
+                </li>
+                <li class="projet__li">
+                    <a href="credits.html" class="projet__lien" title="Voir les crédits">Crédits</a>
+                </li>
+                <li class="projet__li">
+                    <a href="ui-kit.html" class="projet__lien" title="Voir le UI-kit">UI-kit</a>
+                </li>
+                <li class="projet__li">
+                    <a href="https://drive.google.com/drive/folders/1ct9Jh4zkVCSL1Pib80nFl8Ze2wfRjKMS?usp=sharing" class="liens-pratiques__lien" title="Voir les bases de données">Bases de données</a>
+                </li>
+            </ul>
+        </div>
+        <div class="prototypes">
+            <h3 class="small-title footer__title2">Prototypes</h3>
+            <ul>
+                <li class="prototypes__li">
+                    <a href="https://www.figma.com/file/VLIAgNWoRVNWiC9OFqL3W9/TFA---1er-prototype?node-id=0%3A1" class="prototypes__lien" title="Voir le prototype">1ère version</a>
+                </li>
+                <li class="prototypes__li">
+                    <a href="https://www.figma.com/file/VLIAgNWoRVNWiC9OFqL3W9/TFA---1er-prototype?node-id=62%3A2" class="prototypes__lien" title="Voir le prototype">2ème version</a>
+                </li>
+                <li class="prototypes__li">
+                    <a href="https://www.figma.com/file/VLIAgNWoRVNWiC9OFqL3W9/TFA---1er-prototype?node-id=215%3A3167" class="prototypes__lien" title="Voir le prototype">3ème version</a>
+                </li>
+                <li class="prototypes__li">
+                    <a href="https://www.figma.com/file/VLIAgNWoRVNWiC9OFqL3W9/TFA---1er-prototype?node-id=419%3A2" class="prototypes__lien" title="Voir le prototype">4ème version</a>
+                </li>
+                <li class="prototypes__li">
+                    <a href="https://www.figma.com/file/VLIAgNWoRVNWiC9OFqL3W9/TFA---1er-prototype?node-id=601%3A2" class="prototypes__lien" title="Voir le prototype">5ème version</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright-annee">
+            <small class="copyright">
+                ©&#8239;<span class="copyright__annee">Année</span> -
+                <a href="index.html" title="Aller à l'accueil">Hannah Mathot</a>
+            </small>
+            <a href="http://www.dwm.re/" title="Aller sur la page DWT/DWM" class="dwm">DWM</a>
+        </div>       
     </footer>
 </body>
 </html>

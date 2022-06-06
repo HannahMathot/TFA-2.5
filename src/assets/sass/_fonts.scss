@@ -20,10 +20,10 @@ body, small, li, .rs-tooltip-text{
 .in-between-title{
     font-size: $fontSize5Mobile;
 }
-.small-title, .section-9__button, .results-text, .highlight-text, .liens-list__el{
+.small-title, .section-5__button, .results-text, .highlight-text, .liens-list__el{
     font-size: $fontSize3Mobile;
 }
-.footer a, .grid-case a, .grid-credits a{
+.footer a, .main-case a, .main-credits a, .main-uikit a{
     text-decoration: none;
     position: relative;
     &:after {
@@ -42,7 +42,7 @@ body, small, li, .rs-tooltip-text{
 }
 
 .section-case{
-    &-1,&-2,&-3,&-4,&-5,&-6,&-7,&-8,&-9,&-10,&-11,&-12,&-13{
+    &-1,&-2,&-3,&-4,&-5{
         &__link:after{
             display: none;
         }
