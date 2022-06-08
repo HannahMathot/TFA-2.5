@@ -1,0 +1,71 @@
+:focus {
+  outline: 0
+}
+
+// variables
+//font family
+$fontBody: 'Roboto', sans-serif;
+$fontTitle: 'Lora', serif;
+
+//font size
+//hierarchie = 1.2
+$fontSize1Mobile: 16px; //pas utilisé
+$fontSize2Mobile: 19.2px; 
+$fontSize3Mobile: 23.04px; 
+$fontSize4Mobile: 27.64px; 
+$fontSize5Mobile: 33.17px; 
+$fontSize6Mobile: 39.81px;
+$fontSize7Mobile: 47.77px;
+
+//hierarchie = 1.414
+$fontSize1Desktop: 20px;
+$fontSize2Desktop: 28.28px;
+$fontSize3Desktop: 39.98px;
+
+//font color
+$fontColor: #000000;
+$backgroundColor: #ffffff;
+
+//contraste
+$contrasteColor: #81EC40;
+$contrasteColorHover: hsl(97, 82%, 39%);
+$contrasteColorActive: hsl(97, 82%, 29%);
+
+//visited
+$visitedColor: #8b63b7;
+$visitedColorHover: hsl(269, 37%, 59%);
+$visitedColorActive: hsl(269, 37%, 65%);
+
+//calculs
+$lessiveButtonBackgroundColor: #7ECB9D;
+$compteurColor: #ffffff;
+$rangeBackgroundColor: #90ee90;
+$vitresRangeBackgroundColor: #5A5647;
+$multiRangeBackgroundColor: #AA945A;
+$detartrantRangeBackgroundColor: #7A7A7A;
+$wcRoundColor: #999999;
+$degraissantRoundColor: hsl(43, 30%, 50%);
+$liquideRoundColor: #4A4A4A;
+
+//autres
+$disabled: gray;
+$secondMainColor: #D9D9D9;
+$highlightBackground: #FAFCF8;
+$tableHead: #F2F7ED;
+$lightContrasteColor: hsl(97, 50%, 90%);
+
+//imports
+@import '_normalize';
+@import '_reset';
+@import '_fonts';
+@import '_colors';
+@import '_layout_landing';
+
+@import 'fonctionnalites/_slider-armoire';
+@import 'fonctionnalites/_compteur';
+@import 'fonctionnalites/_slider-range-normal';
+@import 'fonctionnalites/_slider-range-round';
+@import '_layout_calcul';
+@import '_layout_results';
+
+@import '_responsive';

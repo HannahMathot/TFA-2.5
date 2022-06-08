@@ -1,0 +1,172 @@
+body{
+    overflow-x: hidden;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &-credits, &-uikit{
+        *{
+            width: 300px;
+            margin: 2px 0;
+        }
+        .small-title{
+            margin: 30px 0 0 0;
+        }
+        p.credits-list{
+            margin: 0 0 50px 0;
+        }
+    }
+}
+.header, .footer, .section{
+    width: 100vw;
+    height: 100vh;
+}
+.header, .section{
+    .description, .medium-title, .logo, &-1 *, &-2 *, &-3 *, &-4 *, &-5 *, &-case *{
+        width: 300px;
+    }
+    .medium-title{
+        padding-bottom: 20px;
+    }
+    .au-prototype{
+        margin-top: 60px;
+        width: 147px;
+        height: 46px;
+    }
+}
+
+.au-prototype, .section-5__button{
+    text-align: center;
+}
+
+.case-header, .credits-header, .uikit-header{
+    width: 100vw;
+    justify-content: center;
+    .logo{
+        width: 300px;
+        padding-top: 95px;
+    }
+    .medium-title{
+        padding-bottom: 10px;
+    }
+}
+
+.section{
+    background-repeat: no-repeat;
+    &-1{
+        background-image: url(../images/landing/2-deco-1.svg);
+        background-size: 150px;
+        background-position: 125% 113%;
+        &__title{
+            padding-bottom: 20px;
+        }
+    }
+    &-2{
+        background-image: url(../images/landing/2-deco-2.svg);
+        background-size: 170px;
+        background-position: -20% 105%;
+        &__title{
+            padding-bottom: 20px;
+        }
+    }
+    &-3{
+        background-image: url(../images/landing/2-deco-3.svg);
+        background-size: 170px;
+        background-position: 130% 130%;
+        &__title{
+            padding-bottom: 20px;
+        }
+    }
+    &-4{
+        &__list{
+            width: 250px;
+        }
+        &__el{
+            width: 250px;
+            transform: translateX(32.5px);
+            &:before{
+                content: "";
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                background-image: url(../images/landing/4-bullet.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            &2:before{
+                transform: translateX(-65px) translateY(20px);
+            }
+            &1:before, &3:before, &4:before{
+                transform: translateX(-65px) translateY(5px);
+            }
+            padding: 10px 0;
+        }
+        &__title{
+            padding-bottom: 20px;
+        }
+        background-image: url(../images/landing/2-deco-4.svg);
+        background-size: 170px;
+        background-position: 125% 105%;
+    }
+    &-5{
+        &__button{
+            width: 147px;
+            height: 38px;
+            margin-top: 50px;
+        }
+    }
+    &-case{
+        margin: 50px 0px;
+        .small-title, .medium-title{
+            margin: 10px 0;
+        }
+        img{
+            margin: 30px 0;
+        }
+    }
+}
+
+.footer{
+    .projet, .prototypes, .small-title{
+        width: 200px;
+        padding: 0;
+        margin: 0;
+    }
+    .projet, .prototypes{
+        padding-bottom: 15px;
+        &__li{
+            padding: 8px 0px;
+        }
+    }
+    .copyright-annee{
+        width: 260px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -598vh;
+        &-case, &-credits, &-uikit{
+            position: absolute;
+            bottom: inherit;
+            transform: translateY(45vh);
+        }
+    }
+    .dwm{
+        background-image: url(../images/landing/5-dwm.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 45px;
+        height: 22.5px;
+        background-size: contain;
+        display: inline-block;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateX(5px) translateY(5px);
+    }
+}
+
+.main-uikit{
+    margin: 50px 0;
+}

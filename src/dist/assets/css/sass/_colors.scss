@@ -1,0 +1,142 @@
+body{
+    background-color: $backgroundColor;
+}
+body, ul li, a{
+    color: $fontColor;
+}
+footer a, .main-case a, .main-credits a, .main-uikit a{
+    &:after{
+        color: $fontColor;
+        background-color: $contrasteColor
+    }
+    &:hover:after{
+        border-bottom: 2px solid $contrasteColor;
+    }
+}
+
+.a--visited a:visited{
+    &:after{
+        background-color: $visitedColor
+    }
+    &:hover:after{
+        border-bottom: 2px solid $visitedColor;
+    }
+}
+
+.next, .warning__next, .au-prototype, .section-5__button{
+    color: $fontColor;
+    background-color: $backgroundColor;
+    outline: 2px solid $contrasteColor;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    &:hover{
+        outline: 2px solid $contrasteColorHover;
+        outline-offset: 3px;
+        transition: ease-in 0.1s;
+        color: $fontColor;
+    }
+    &:active{
+        outline: 2px solid $contrasteColorActive;
+        color: $fontColor;
+    }
+    &:disabled{
+        background-color: $disabled;
+    }
+}
+
+.flex a .section-case{
+    &-1,&-2,&-3,&-4,&-5{
+        &__img{
+            border: 2px solid $contrasteColor;
+            &:hover{
+                border: 2px solid $contrasteColorHover;
+            }
+            &:active{
+                border: 2px solid $contrasteColorActive;
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    &-track {
+        background-color: $lightContrasteColor;
+    }
+    &-thumb {
+        background-color: $contrasteColor;
+    }
+}
+.warning, .force-mobile, .footer-list{
+    background-color: $backgroundColor;
+}
+
+.round--liquide .rs-tooltip-text{
+    color: $backgroundColor;
+}
+
+.compteur--lessive{
+    .compteur__value{
+        color: $compteurColor;
+    }
+}
+
+.range{
+    &__barre{
+        background-color: $rangeBackgroundColor;
+    }
+    &--vitres input{
+        background-color: $vitresRangeBackgroundColor;
+    }
+    &--multi input{
+        background-color: $multiRangeBackgroundColor;
+    }
+    &--detartrant input{
+        background-color: $detartrantRangeBackgroundColor;
+    }
+}
+
+.round{
+    &--wc{
+        .rs-path-color, .rs-range-color {
+            background-color: $wcRoundColor;
+        }
+    }
+    &--degraissant{
+        .rs-path-color, .rs-range-color {
+            background-color: $degraissantRoundColor;
+        }
+    }
+    &--liquide{
+        .rs-path-color, .rs-range-color {
+            background-color: $liquideRoundColor;
+        }
+    }
+}
+
+.footer-list, footer{
+    box-shadow: 0px -4px 10px hsla(0, 0%, 0%, 7%);
+}
+
+.footer-list__el--active{
+    fill: $contrasteColor;
+}
+
+.section-1, .section-3, .section-5, .section-highlighted{
+    background-color: $highlightBackground;
+}
+
+.results-list__el, .liens-list__el{
+    border: 1px solid $contrasteColor;
+}
+
+thead{
+    background-color: $tableHead;
+}
+
+.first-table, .second-table, .third-table{
+    *{
+        border: solid 1px $secondMainColor;
+    }
+}

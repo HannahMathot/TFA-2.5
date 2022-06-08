@@ -1,0 +1,91 @@
+.range{
+    &__barre{
+        -webkit-appearance: none;
+        width: 200px;
+        height: 20px;
+        border-radius: 25px;
+        ::-webkit-slider-thumb{
+            appearance: none;
+            cursor: pointer;
+            height: 20px;
+            width: 20px;
+            border-radius: 1000px;
+        }
+    }
+    &--vitres{
+        *{
+            transform: translateX(-50%);
+            top: 328px;
+        }
+        input{
+            width: 160px;
+        }
+        span{
+            top: 380px;
+        }
+    }
+    &--multi{
+        *{
+            transform: translateX(-50%);
+            top: 290px;
+        }
+        ::-webkit-slider-thumb{
+            appearance: none;
+            cursor: pointer;
+            height: 235px;
+            width: 40px;
+            background-image: url(../images/prototype/autres-elements/8-multi.svg);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+            background-color: transparent;
+            border-radius: 0;
+        }
+        input{
+            width: 250px;
+        }
+        span{
+            top: 410px;
+        }
+    }
+    &--detartrant{
+        *{
+            transform: translateX(-50%) translateX(65px);
+            top: 330px;
+        }
+        input{
+            width: 170px;
+        }
+        span{
+            top: 380px;
+        }
+    }
+    &--vitres, &--multi, &--detartrant{
+        *{
+            position: absolute;
+            z-index: 11;
+            left: 50%;
+        }
+        input{
+            border-radius: 0;
+            height: 5px;
+        }
+        span{
+            font-size: $fontSize5Mobile;
+        }
+    }
+    &--vitres, &--detartrant{
+        ::-webkit-slider-thumb{
+            appearance: none;
+            cursor: pointer;
+            height: 100px;
+            width: 80px;
+            background-image: url(../images/prototype/autres-elements/1-eponge.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-color: transparent;
+            border-radius: 0;
+        }
+    }
+}

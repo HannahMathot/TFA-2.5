@@ -1,0 +1,61 @@
+.round{
+    &--wc{
+        transform: translateX(-50%);
+        top: 380px;
+        .rs-handle {
+            background-image: url(../images/prototype/autres-elements/2-wc.svg);
+            background-size: contain;
+            background-position: center;
+            transform: rotate(0deg);
+        }
+        .rs-bg-color {
+            background-image: url(../images/prototype/main-image/3-wc.svg);
+            background-size: 220px;
+            background-position-x: center;
+            background-position-y: 90%;
+        }
+    }
+    &--degraissant{
+        transform: translateX(-50%);
+        top: 312px;
+        .rs-handle {
+            background-image: url(../images/prototype/autres-elements/1-eponge.svg);
+            background-size: contain;
+            transform: rotate(10deg);
+        }
+        .rs-bg-color {
+            background-image: url(../images/prototype/main-image/6-frites.svg);
+            background-size: 350px;
+            background-position-x: center;
+            background-position-y: 60%;
+        }
+    }
+    &--liquide{
+        transform: translateX(-50%) translateX(-51px);
+        top: 338px;
+        .rs-handle {
+            background-image: url(../images/prototype/autres-elements/1-eponge.svg);
+            background-size: 50%;
+            transform: rotate(20deg);
+            background-position-x: 85%;
+        }
+        .rs-bg-color {
+            background-image: url(../images/prototype/main-image/9-casserole.svg);
+            background-size: 330px;
+            background-position-x: 25%;
+            background-position-y: 70%;
+        }
+    }
+    &--wc, &--degraissant, &--liquide{
+        position: absolute;
+        z-index: 11;
+        left: 50%;
+        .rs-handle, .rs-bg-color{
+            background-repeat: no-repeat;
+            background-color: transparent;
+        }
+    }
+    .rs-bar .rs-seperator{
+        display: none;
+    }
+}
