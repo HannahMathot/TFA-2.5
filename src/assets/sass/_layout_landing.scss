@@ -64,7 +64,6 @@ body{
                 content: "";
                 background-repeat: no-repeat;
                 position: absolute;
-                background-image: cover;
                 //border: 1px solid black;
                 height: 50vh;
             }
@@ -76,9 +75,10 @@ body{
         }
         &__text:after{
             background-image: url(../images/landing/2-deco-1.svg);
-            transform: translateY(-50px);
-            width: 100px;
+            transform: translateY(-30px);
+            width: 70px;
             right: 0;
+            background-size: 80px;
         }
     }
     &-2{
