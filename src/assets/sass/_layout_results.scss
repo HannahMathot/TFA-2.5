@@ -39,6 +39,7 @@
 
 .section-highlighted{
     margin-top: 54px;
+    margin-bottom: 60px;
     .highlight-text{
         padding-top: 20px;
     }
@@ -53,7 +54,7 @@
 
 .liens{
     &-pratiques{
-        padding-bottom: 70px;
+        padding-top: 50px;
     }
     &-title{
         width: 290px;
@@ -77,10 +78,10 @@
             padding-top: 100px;
             background-repeat: no-repeat;
             background-position-x: center;
-            background-position-y: 15%;
             &1{
                 background-image: url(../images/prototype/resultats/6-recettes.svg);
                 background-size: 10vmax;
+                background-position-y: 30%;
             }
             &2{
                 background-image: url(../images/prototype/resultats/7-details-calcul.svg);
@@ -90,6 +91,7 @@
             &3{
                 background-image: url(../images/prototype/resultats/8-comment-calcule.svg);
                 background-size: 10vmax;
+                background-position-y: 15%;
             }
             &4{
                 background-image: url(../images/prototype/resultats/9-reset.svg);
@@ -149,8 +151,8 @@
                 height: 26.35px;
             }
             &2{
-                width: 20.44px;
-                height: 26.35px;
+                width: 26px;
+                height: 21.56px;
             }
             &3{
                 width: 24px;

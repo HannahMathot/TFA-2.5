@@ -4,7 +4,7 @@
     &--lessive{
         font-size: $fontSize3Mobile;
         *{
-            top: 214px;
+            top: 154px;
         }
         button{
             background-color: transparent;
@@ -35,36 +35,36 @@
             background-image: url(../images/prototype/autres-elements/4-tablettes.svg);
             width: 160px;
             height: 160px;
-            transform: translateY(320px) translateX(-50%) translateX(100px);
+            transform: translateY(300px) translateX(-50%) translateX(100px);
         }
         .compteur__remove{
             background-image: url(../images/prototype/autres-elements/5-tablette-moins.svg);
-            transform: translateY(450px) translateX(-50%) translateX(30px);
+            transform: translateY(410px) translateX(-50%) translateX(30px);
             background-position-y: 150%;
         }
         .compteur__value{
             background-image: url(../images/prototype/autres-elements/6-tablette-value.svg);
-            transform: translateY(460px) translateX(-50%) translateX(95px);
+            transform: translateY(420px) translateX(-50%) translateX(95px);
             text-align: center;
             background-position-y: 20%;
         }
         .compteur__add{
             background-image: url(../images/prototype/autres-elements/7-tablette-plus.svg);
-            transform: translateY(445px) translateX(-50%) translateX(150px);
+            transform: translateY(405px) translateX(-50%) translateX(150px);
             background-position: 65%;
         }
     }
     &--desodorisant{
         .compteur__remove{
-            transform: translateY(256px) translateX(-50%) translateX(-130px);
+            transform: translateY(201px) translateX(-50%) translateX(-130px);
             font-size: $fontSize7Mobile;
         }
         .compteur__value{
-            transform: translateY(261px) translateX(-50%) translateX(-90px);
+            transform: translateY(206px) translateX(-50%) translateX(-90px);
             font-size: $fontSize5Mobile;
         }
         .compteur__add{
-            transform: translateY(264px) translateX(-50%) translateX(-50px);
+            transform: translateY(209px) translateX(-50%) translateX(-50px);
             font-size: $fontSize5Mobile;
         }
     }

@@ -27,7 +27,7 @@
     &--multi{
         *{
             transform: translateX(-50%);
-            top: 290px;
+            top: 270px;
         }
         ::-webkit-slider-thumb{
             appearance: none;
@@ -51,13 +51,13 @@
     &--detartrant{
         *{
             transform: translateX(-50%) translateX(65px);
-            top: 330px;
+            top: 300px;
         }
         input{
             width: 170px;
         }
         span{
-            top: 380px;
+            top: 350px;
         }
     }
     &--vitres, &--multi, &--detartrant{

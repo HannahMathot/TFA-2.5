@@ -1,7 +1,7 @@
 .round{
     &--wc{
         transform: translateX(-50%);
-        top: 380px;
+        top: 330px;
         .rs-handle {
             background-image: url(../images/prototype/autres-elements/2-wc.svg);
             background-size: contain;
@@ -10,14 +10,14 @@
         }
         .rs-bg-color {
             background-image: url(../images/prototype/main-image/3-wc.svg);
-            background-size: 220px;
+            background-size: 200px;
             background-position-x: center;
             background-position-y: 90%;
         }
     }
     &--degraissant{
         transform: translateX(-50%);
-        top: 312px;
+        top: 282px;
         .rs-handle {
             background-image: url(../images/prototype/autres-elements/1-eponge.svg);
             background-size: contain;
@@ -32,7 +32,7 @@
     }
     &--liquide{
         transform: translateX(-50%) translateX(-51px);
-        top: 338px;
+        top: 288px;
         .rs-handle {
             background-image: url(../images/prototype/autres-elements/1-eponge.svg);
             background-size: 50%;
