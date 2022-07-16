@@ -55,12 +55,30 @@ body{
 
 .section{
     background-repeat: no-repeat;
+    z-index: -2;
     &-1{
-        background-image: url(../images/landing/2-deco-1.svg);
-        background-size: 150px;
-        background-position: 125% 113%;
+        &__text{
+            z-index: 0;
+            &:after{
+                z-index: -1;
+                content: "";
+                background-repeat: no-repeat;
+                position: absolute;
+                background-image: cover;
+                //border: 1px solid black;
+                height: 50vh;
+            }
+        }
+    }
+    &-1{
         &__title{
             padding-bottom: 20px;
+        }
+        &__text:after{
+            background-image: url(../images/landing/2-deco-1.svg);
+            transform: translateY(-50px);
+            width: 100px;
+            right: 0;
         }
     }
     &-2{
