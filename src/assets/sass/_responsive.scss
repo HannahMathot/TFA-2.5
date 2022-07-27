@@ -45,14 +45,6 @@
         }
         &-4{
             background-position: 105% 105%;
-            &__el{
-                &2:before{
-                    transform: translateX(-65px) translateY(5px);
-                }
-                &3:before, &4:before{
-                    transform: translateX(-65px) translateY(-10px);
-                }
-            }
         }
         &-5{
             &__button{
@@ -160,16 +152,6 @@
             width: 380px;
         }
     }
-    .section-4{
-        &__el{
-            &1:before, &3:before, &4:before{
-                transform: translateX(-65px) translateY(16px);
-            }
-            &2:before{
-                transform: translateX(-65px) translateY(40px);
-            }
-        }
-    }
 }
 
 @media (min-width : 900px){
@@ -193,14 +175,6 @@
             width: 700px;
         }
         &-4{
-            &__el{
-                &2:before{
-                    transform: translateX(-65px) translateY(16px);
-                }
-                &3:before, &4:before{
-                    transform: translateX(-65px) translateY(0px);
-                }
-            }
             background-size: 200px;
         }
         &-5__button{

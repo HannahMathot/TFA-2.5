@@ -56,7 +56,10 @@ body{
 .section{
     background-repeat: no-repeat;
     z-index: -2;
-    &-1{
+    &-1, &-2, &-3, &-4, &-5{
+        &__title{
+            margin-bottom: 15px;
+        }
         &__text{
             z-index: 0;
             &:after{
@@ -70,32 +73,19 @@ body{
         }
     }
     &-1{
-        &__title{
-            padding-bottom: 20px;
-        }
-        &__text:after{
-            background-image: url(../images/landing/2-deco-1.svg);
-            transform: translateY(-30px);
-            width: 70px;
-            right: 0;
-            background-size: 80px;
-        }
+        background-image: url(../images/landing/2-deco-1.svg);
+        background-size: 150px;
+        background-position: 125% 113%;
     }
     &-2{
         background-image: url(../images/landing/2-deco-2.svg);
         background-size: 170px;
         background-position: -20% 105%;
-        &__title{
-            padding-bottom: 20px;
-        }
     }
     &-3{
         background-image: url(../images/landing/2-deco-3.svg);
         background-size: 170px;
         background-position: 130% 130%;
-        &__title{
-            padding-bottom: 20px;
-        }
     }
     &-4{
         &__list{
@@ -103,26 +93,8 @@ body{
         }
         &__el{
             width: 250px;
-            transform: translateX(32.5px);
-            &:before{
-                content: "";
-                position: absolute;
-                width: 60px;
-                height: 60px;
-                background-image: url(../images/landing/4-bullet.svg);
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-            &2:before{
-                transform: translateX(-65px) translateY(20px);
-            }
-            &1:before, &3:before, &4:before{
-                transform: translateX(-65px) translateY(5px);
-            }
+            list-style: disc;
             padding: 10px 0;
-        }
-        &__title{
-            padding-bottom: 20px;
         }
         background-image: url(../images/landing/2-deco-4.svg);
         background-size: 170px;
