@@ -33,6 +33,9 @@
             width: 400px;
         }
     }
+    .header{
+        background-position: -5% 105%;
+    }
     .section{
         &-1{
             background-position: 110% 110%;
@@ -44,7 +47,7 @@
             background-position: 110% 130%;
         }
         &-4{
-            background-position: 105% 105%;
+            background-position: -5% 110%;
         }
         &-5{
             &__button{
@@ -116,6 +119,9 @@
         &-3{
             background-position: 105% 125%;
         }
+        &-4{
+            background-size: 175px;
+        }
         &-5{
             &__button{
                 width: 182px;
@@ -155,6 +161,10 @@
 }
 
 @media (min-width : 900px){
+    .header{
+        background-size: 175px;
+        background-position: -6% 105%;
+    }
     .section{
         &-1{
             background-size: 180px;
@@ -165,6 +175,9 @@
         }
         &-3{
             background-size: 190px;
+        }
+        &-4{
+            background-size: 205px;
         }
     }
 }
@@ -198,6 +211,10 @@
 
 
 @media (min-width : 1300px){
+    .header{
+        background-size: 195px;
+        background-position: -2% 108%;
+    }
     .section{
         &-1{
             background-size: 200px;
@@ -210,7 +227,8 @@
             background-size: 220px;
         }
         &-4{
-            background-position: 101% 107%;
+            background-size: 225px;
+            background-position: -5% 110%;
         }
     }
 }

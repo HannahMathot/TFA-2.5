@@ -28,10 +28,12 @@
 	<!-- CSS -->
     <link href="assets/css/main.css" rel="stylesheet">
     <!-- JS -->
+    <script src="assets/js/hammer.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="assets/js/anim.min.js" defer></script>
     <script src="assets/js/main.min.js" defer></script>
+    <script src="assets/js/temoignages.min.js" defer></script>
 </head>
 <body>
     <header class="flex header">
@@ -72,7 +74,7 @@
             </p>
         </section>
         <section class="flex section section-4">
-            <h2 class="medium-title section-4__title">Des bases de données.</h2>
+            <h2 class="medium-title section-4__title">En se basant sur des données fiables</h2>
             <ul class="section-4__list">
                 <li class="section-4__el section-4__el1">de produits ménagers de vos magasins industriels habituels</li>
                 <li class="section-4__el section-4__el2">de recettes écologiques à prix abordable que vous pouvez réaliser chez vous</li>
@@ -87,7 +89,58 @@
                 Grâce à leurs retours et leurs conseils, ils égaient la plateforme en 
                 permettant aux recettes d’évoluer et de s’améliorer&#8239;!
             </p>
-            <div class="section-5__button"><a href="calculs.html">Rejoignez-les</a></div>
+            <button class="section-5__button section-5__button--previous">Previous</button>
+            <button class="section-5__button section-5__button--next">Next</button>
+            <ul class="section-5__list temoignages-list">
+                <li class="temoignages-list__el">
+                    <h3 class="small-title temoignages-list__title">Eda</h3>
+                    <small class="temoignages-list__desc">45 ans, vendeuse</small>
+                    <img src="assets/images/landing/6-rating.svg" alt="rating de cinq etoiles" class="temoignages-list__rating">
+                    <p class="temoignages-list__avis">Quand on a des enfants, c’est important d’économiser là où on peut. Faire ça tout en revenant au naturel, c’est encore mieux&#8239;!</p>
+                </li>
+                <li class="temoignages-list__el">
+                    <h3 class="small-title temoignages-list__title">Arwen</h3>
+                    <small class="temoignages-list__desc">24 ans, facteur</small>
+                    <img src="assets/images/landing/6-rating.svg" alt="rating de cinq etoiles" class="temoignages-list__rating">
+                    <p class="temoignages-list__avis">Je suis enfin tombé sur des recettes de produits ménagers écologiques qui fonctionnent&#8239;! Ca me fait super plaisir&#8239;!</p>
+                </li>
+                <li class="temoignages-list__el">
+                    <h3 class="small-title temoignages-list__title">Mako</h3>
+                    <small class="temoignages-list__desc">67 ans, propriétaire d'un salon de thé</small>
+                    <img src="assets/images/landing/6-rating.svg" alt="rating de cinq etoiles" class="temoignages-list__rating">
+                    <p class="temoignages-list__avis">Désormais, nos armoires n’empestent plus le produit ménager mais sont utilisées pour ranger notre précieux vinaigre.</p>
+                </li>
+                <li class="temoignages-list__el">
+                    <h3 class="small-title temoignages-list__title">Roxane</h3>
+                    <small class="temoignages-list__desc">26 ans, prof. d’arts martiaux</small>
+                    <img src="assets/images/landing/6-rating.svg" alt="rating de cinq etoiles" class="temoignages-list__rating">
+                    <p class="temoignages-list__avis">J’adore cette ambiance conviviale&#8239;! On s’entraide tous et il y a de bons retours vis-à-vis des développeurs.</p>
+                </li>
+                <li class="temoignages-list__el">
+                    <h3 class="small-title temoignages-list__title">Violette</h3>
+                    <small class="temoignages-list__desc">40 ans, inventrice</small>
+                    <img src="assets/images/landing/6-rating.svg" alt="rating de cinq etoiles" class="temoignages-list__rating">
+                    <p class="temoignages-list__avis">Grâce aux recettes d’Efficac’éco, j’ai pu économiser suffisamment pour me payer ce voyage que je voulais faire depuis si longtemps&#8239;!</p>
+                </li>
+                <li class="temoignages-list__el">
+                    <h3 class="small-title temoignages-list__title">Teo</h3>
+                    <small class="temoignages-list__desc">16 ans, apprenti papetier</small>
+                    <img src="assets/images/landing/6-rating.svg" alt="rating de cinq etoiles" class="temoignages-list__rating">
+                    <p class="temoignages-list__avis">Grâce à ces recettes, je sais la composition exacte de tous mes produits ménagers et je suis assuré qu'ils sont écologiques.</p>
+                </li>
+                <li class="temoignages-list__el">
+                    <h3 class="small-title temoignages-list__title">Ayi</h3>
+                    <small class="temoignages-list__desc">37 ans, magicienne</small>
+                    <img src="assets/images/landing/6-rating.svg" alt="rating de cinq etoiles" class="temoignages-list__rating">
+                    <p class="temoignages-list__avis">Je réalise souvent des recettes avec des enfants que je dois garder. Ils adorent ça et repartent toujours fièrement avec leur flacon en souriant.</p>
+                </li>
+                <li class="temoignages-list__el">
+                    <h3 class="small-title temoignages-list__title">Solveig</h3>
+                    <small class="temoignages-list__desc">21 ans, prof. de batterie</small>
+                    <img src="assets/images/landing/6-rating.svg" alt="rating de cinq etoiles" class="temoignages-list__rating">
+                    <p class="temoignages-list__avis">J'ai toujours utilisé des recettes complexes. Quand Efficac'éco en a proposées des plus simples, je n'ai donc pas hésité une seule seconde.</p>
+                </li>
+            </ul>
         </section>
     </main>
     

@@ -23,9 +23,9 @@ footer a, .main-case a, .main-credits a, .main-uikit a{
     }
 }
 
-.next, .warning__next, .au-prototype, .section-5__button{
+.next, .warning__next, .au-prototype{
     color: $fontColor;
-    background-color: $backgroundColor;
+    background-color: transparent;
     outline: 2px solid $contrasteColor;
     border: none;
     padding: 5px;
@@ -138,5 +138,14 @@ thead{
 .first-table, .second-table, .third-table{
     *{
         border: solid 1px $secondMainColor;
+    }
+}
+
+.section-5 .temoignages-list{
+    &__el{
+        border: 1px solid $contrasteColor;
+    }
+    &__desc{
+        color: $disabled;
     }
 }
