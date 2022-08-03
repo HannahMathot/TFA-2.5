@@ -112,12 +112,13 @@ body{
         &::after{
             background-image: url(../images/landing/2-deco-4.svg);
             width: 110px;
-            background-size: 80px;
+            height: 250px;
+            background-size: 75px;
             background-position: center right;
             top: 400vh;
             left: inherit;
             right: 0;
-            transform: translateY(-170px);
+            transform: translateY(-210px);
         }
     }
     &-4{

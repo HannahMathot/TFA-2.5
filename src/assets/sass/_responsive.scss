@@ -33,22 +33,7 @@
             width: 400px;
         }
     }
-    .header{
-        background-position: -5% 105%;
-    }
     .section{
-        &-1{
-            background-position: 110% 110%;
-        }
-        &-2{
-            background-position: -10% 110%;
-        }
-        &-3{
-            background-position: 110% 130%;
-        }
-        &-4{
-            background-position: -5% 110%;
-        }
         &-5{
             &__button{
                 width: 147px;
@@ -109,18 +94,32 @@
             width: 270px;
         }
     }
+    .header::after{
+        height: 210px;
+        background-size: 150px;
+        transform: translateY(-180px) translateX(-35px);
+    }
     .section{
-        &-1{
-            background-position: 105% 110%;
+        &-1::after{
+            height: 230px;
+            background-size: 110px;
+            transform: translateY(-200px);
         }
-        &-2{
-            background-position: -5% 110%;
+        &-2::after{
+            height: 220px;
+            background-size: 125px;
         }
-        &-3{
-            background-position: 105% 125%;
+        &-3::after{
+            height: 290px;
+            background-size: 95px;
+            transform: translateY(-260px);
         }
-        &-4{
-            background-size: 175px;
+        &-4::after{
+            height: 240px;
+            width: 140px;
+            background-size: 140px;
+            transform: translateY(-190px) translateX(-10px);
+
         }
         &-5{
             &__button{
@@ -161,23 +160,35 @@
 }
 
 @media (min-width : 900px){
-    .header{
-        background-size: 175px;
-        background-position: -6% 105%;
+    .header::after{
+        height: 240px;
+        width: 160px;
+        background-size: 170px;
+        transform: translateY(-210px) translateX(-35px);
     }
     .section{
-        &-1{
-            background-size: 180px;
+        &-1::after{
+            height: 270px;
+            background-size: 130px;
+            transform: translateY(-240px);
         }
-        &-2{
-            background-size: 220px;
-            background-position: -5% 115%;
+        &-2::after{
+            height: 280px;
+            width: 120px;
+            background-size: 150px;
+            transform: translateY(-235px) translateX(-10px);
         }
-        &-3{
-            background-size: 190px;
+        &-3::after{
+            height: 320px;
+            background-size: 105px;
+            transform: translateY(-280px);
         }
-        &-4{
-            background-size: 205px;
+        &-4::after{
+            height: 310px;
+            width: 170px;
+            background-size: 185px;
+            transform: translateY(-255px) translateX(-10px);
+
         }
     }
 }
@@ -186,9 +197,6 @@
     .section{
         .medium-title, &-1 *, &-2 *, &-3 *, &-4 *, &-5 *, &-case *{
             width: 700px;
-        }
-        &-4{
-            background-size: 200px;
         }
         &-5__button{
             width: 182px;
@@ -211,24 +219,36 @@
 
 
 @media (min-width : 1300px){
-    .header{
-        background-size: 195px;
-        background-position: -2% 108%;
+    .header::after{
+        height: 290px;
+        width: 190px;
+        background-size: 210px;
+        transform: translateY(-260px) translateX(-35px);
     }
     .section{
-        &-1{
+        &-1::after{
+            height: 320px;
+            background-size: 150px;
+            transform: translateY(-270px);
+        }
+        &-2::after{
+            height: 330px;
+            width: 150px;
+            background-size: 180px;
+            transform: translateY(-270px) translateX(-10px);
+        }
+        &-3::after{
+            height: 370px;
+            width: 120px;
+            background-size: 125px;
+            transform: translateY(-330px);
+        }
+        &-4::after{
+            height: 350px;
+            width: 190px;
             background-size: 200px;
-            background-position: 102% 115%;
-        }
-        &-2{
-            background-size: 240px;
-        }
-        &-3{
-            background-size: 220px;
-        }
-        &-4{
-            background-size: 225px;
-            background-position: -5% 110%;
+            transform: translateY(-285px) translateX(-10px);
+
         }
     }
 }
