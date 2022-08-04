@@ -68,7 +68,7 @@ footer a, .main-case a, .main-credits a, .main-uikit a{
         background-color: $contrasteColor;
     }
 }
-.warning, .force-mobile, .footer-list{
+.warning__el1::before, .warning__el4::before, .force-mobile, .footer-list{
     background-color: $backgroundColor;
 }
 

@@ -17,6 +17,9 @@
     .force-mobile{
         display: flex;
     }
+    .header-calculs .big-title, .header-calculs .small-title, .main-calculs, .footer-calculs{
+        display: none;
+    }
 }
 
 //landing page

@@ -16,6 +16,15 @@
         &1{
             margin-top: 55px;
         }
+        &1::before, &4::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
     }
 }
 
@@ -90,6 +99,9 @@
 //hidden
 .hidden{
     display: none;
+}
+.back{
+    z-index: -1;
 }
 
 //boutons
