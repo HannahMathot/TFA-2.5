@@ -1,10 +1,10 @@
-body, small, li, .rs-tooltip-text, .section-5 .temoignages-list__desc, .section-5 .temoignages-list__avis{
+body, small, li, .rs-tooltip-text{
     font-family: $fontBody;
     font-size: $fontSize2Mobile;
     font-weight: normal;
     line-height: 1.5;
 }
-.huge-title, .big-title, .medium-title, .in-between-title, .small-title{
+.huge-title, .big-title, .medium-title, .in-between-title, .small-title, .tiny-title{
     font-family: $fontTitle;
     font-weight: 700;
     line-height: 1.4;
@@ -23,6 +23,13 @@ body, small, li, .rs-tooltip-text, .section-5 .temoignages-list__desc, .section-
 }
 .small-title, .section-5__button, .results-text, .highlight-text, .liens-list__el{
     font-size: $fontSize3Mobile;
+}
+.tiny-title{
+    font-size: $fontSize2Mobile;
+}
+.slider__el h3{
+    font-size: $fontSize1Mobile;
+    text-align: center;
 }
 .footer a, .main-case a, .main-credits a, .main-uikit a{
     text-decoration: none;

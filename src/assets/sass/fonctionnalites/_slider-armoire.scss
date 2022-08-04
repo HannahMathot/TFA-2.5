@@ -1,69 +1,74 @@
 .armoire{
     &__el{
         z-index: 20;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
     }
     &__el, button{
         position: absolute;
     }
     &__lessive button{
-        width: 27px;
-        top: 148px;
+        width: 24px;
+        top: -185px;
         transform: translateX(-65px);
     }
     &__adoucissant button{
-        width: 29px;
-        top: 148px;
-        transform: translateX(-32px);
+        width: 25px;
+        top: -184px;
+        transform: translateX(-40px);
     }
     &__vitres button{
-        width: 28px;
-        top: 152px;
-        transform: translateX(7px);
+        width: 29px;
+        top: -183px;
+        transform: translateX(-15px);
     }
     &__wc button{
-        width: 20px;
-        top: 149px;
-        transform: translateX(42px);
+        width: 19px;
+        top: -185px;
+        transform: translateX(15px);
     }
     &__tablettes button{
-        width: 35px;
-        top: 244px;
-        transform: translateX(-66px);
+        width: 31px;
+        top: -173px;
+        transform: translateX(35px);
     }
     &__multi button{
         width: 20px;
-        top: 233px;
-        transform: translateX(-28px);
+        top: -105px;
+        transform: translateX(-65px);
     }
     &__degraissant button{
-        width: 29px;
-        top: 233px;
-        transform: translateX(5px);
+        width: 28px;
+        top: -105px;
+        transform: translateX(-41px);
     }
     &__desodorisant button{
         width: 17px;
-        top: 232px;
-        transform: translateX(45px);
+        top: -104px;
+        transform: translateX(-10px);
     }
     &__detartrant button{
-        width: 23px;
-        top: 315px;
-        transform: translateX(-65px);
+        width: 22px;
+        top: -105px;
+        transform: translateX(12px);
     }
     &__liquide button{
-        width: 30px;
-        top: 313px;
-        transform: translateX(37px);
+        width: 26px;
+        top: -105px;
+        transform: translateX(39px);
     }
 }
 
-.slider{
-    top: 340px;
+.slider, .slider__button, .slider__el{
+    position: absolute;
+    left: 50%;
     transform: translateX(-50%);
+}
+
+.slider{
     z-index: 25;
+    //background-color: red;
+    width: 100vw;
+    top: calc(50vh + 35px);
+    bottom: 20px;
     &__button{
         top: 100px;
         z-index: 30;
@@ -77,15 +82,13 @@
         border: none;
         cursor: pointer;
         &--previous{
-            transform: translateY(0px) translateX(-50%) translateX(-110px);
+            transform: translateY(0px) translateX(-50%) translateX(-100px);
         }
         &--next{
-            transform: translateY(0px) translateX(-50%) translateX(110px) rotate(180deg);
+            transform: translateY(0px) translateX(-50%) translateX(100px) rotate(180deg);
         }
     }
     &__el{
-        top: 0;
-        transform: translateX(-50%);
         visibility: hidden;
         opacity: 0;
         pointer-events: none;
@@ -95,11 +98,12 @@
             opacity: 1;
             pointer-events: all;
         }
+        & *{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
-}
-.slider, .slider__button, .slider__el{
-    position: absolute;
-    left: 50%;
 }
 
 .armoire, .slider{

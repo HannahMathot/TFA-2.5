@@ -46,53 +46,51 @@
 .main-container{
     max-width: 1000px;
     margin: 0 auto;
-    .small-title{
+    .tiny-title{
         margin: 5px 20px 0 20px; 
     }
+}
+.slider__el h3{
+    margin: 0;
+    padding: 5px;
 }
 .big-title{
     margin: 15px 0 0 20px;
 }
 
 //main image
-.main-image{
+.main-image-container, .armoire{
+    //background-color: red;
     position: absolute;
-    top: 160px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 126px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    bottom: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-image{
     width: 250px;
     z-index: 10;
-    &--lessive{
-        top: 140px;
+    &--armoire{
+        transform: translateY(-30px);
     }
-    &--vitres{
-        top: 200px;
+    &--lessive, &--adoucissant, &--vitres, &--wc, &--tablettes, &--multi, &--degraissant, &--desodorisant, &--detartrant, &--liquide{
+        transform: translateY(0);
     }
     &--wc{
         width: 220px;
-        top: 175px;
-    }
-    &--multi{
-        top: 250px;
     }
     &--multi, &--degraissant, &--desodorisant{
         width: 320px;
     }
-    &--degraissant{
-        top: 230px;
-    }
-    &--desodorisant{
-        top: 180px;
-    }
     &--detartrant{
         width: 350px;
-        transform: translateX(-50%) translateX(4px);
-        top: 220px;
     }
     &--liquide{
         width: 320px;
-        transform: translateX(-50%);
-        top: 220px;
     }
 }
 
