@@ -15,19 +15,19 @@
     &--vitres{
         *{
             transform: translateX(-50%);
-            top: 328px;
+            top: calc(50vh + 32px);
         }
         input{
             width: 160px;
         }
         span{
-            top: 380px;
+            transform: translateX(-50%) translateY(55px);
         }
     }
     &--multi{
         *{
             transform: translateX(-50%);
-            top: 270px;
+            top: calc(50vh - 35px);
         }
         ::-webkit-slider-thumb{
             appearance: none;
@@ -45,19 +45,19 @@
             width: 250px;
         }
         span{
-            top: 410px;
+            transform: translateX(-50%) translateY(130px);
         }
     }
     &--detartrant{
         *{
-            transform: translateX(-50%) translateX(65px);
-            top: 300px;
+            transform: translateX(-50%);
+            top: calc(50vh + 30px);
         }
         input{
-            width: 170px;
+            width: 140px;
         }
         span{
-            top: 350px;
+            transform: translateX(-50%) translateY(55px);
         }
     }
     &--vitres, &--multi, &--detartrant{

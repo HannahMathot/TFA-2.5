@@ -72,47 +72,12 @@ footer a, .main-case a, .main-credits a, .main-uikit a{
     background-color: $backgroundColor;
 }
 
-.round--liquide .rs-tooltip-text{
-    color: $backgroundColor;
+.compteur__value, .range__value, .rs-tooltip-text{
+    color: $fontColor;
 }
 
-.compteur--lessive{
-    .compteur__value{
-        color: $compteurColor;
-    }
-}
-
-.range{
-    &__barre{
-        background-color: $rangeBackgroundColor;
-    }
-    &--vitres input{
-        background-color: $vitresRangeBackgroundColor;
-    }
-    &--multi input{
-        background-color: $multiRangeBackgroundColor;
-    }
-    &--detartrant input{
-        background-color: $detartrantRangeBackgroundColor;
-    }
-}
-
-.round{
-    &--wc{
-        .rs-path-color, .rs-range-color {
-            background-color: $wcRoundColor;
-        }
-    }
-    &--degraissant{
-        .rs-path-color, .rs-range-color {
-            background-color: $degraissantRoundColor;
-        }
-    }
-    &--liquide{
-        .rs-path-color, .rs-range-color {
-            background-color: $liquideRoundColor;
-        }
-    }
+.range input, .round .rs-path-color, .round .rs-range-color{
+    background-color: $wcRoundColor;
 }
 
 .footer-list, footer{

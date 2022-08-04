@@ -1,12 +1,12 @@
 .round{
     &--wc{
         transform: translateX(-50%);
-        top: 330px;
+        top: calc(50vh + 50px);
         .rs-handle {
             background-image: url(../images/prototype/autres-elements/2-wc.svg);
             background-size: contain;
             background-position: center;
-            transform: rotate(0deg);
+            transform: rotate(70deg);
         }
         .rs-bg-color {
             background-image: url(../images/prototype/main-image/3-wc.svg);
@@ -17,7 +17,7 @@
     }
     &--degraissant{
         transform: translateX(-50%);
-        top: 282px;
+        top: calc(50vh);
         .rs-handle {
             background-image: url(../images/prototype/autres-elements/1-eponge.svg);
             background-size: contain;
@@ -25,14 +25,14 @@
         }
         .rs-bg-color {
             background-image: url(../images/prototype/main-image/6-frites.svg);
-            background-size: 350px;
-            background-position-x: center;
-            background-position-y: 60%;
+            background-size: 335px;
+            background-position-x: 51%;
+            background-position-y: 53%;
         }
     }
     &--liquide{
-        transform: translateX(-50%) translateX(-51px);
-        top: 288px;
+        transform: translateX(-50%) translateX(-29px);
+        top: calc(50vh - 7px);
         .rs-handle {
             background-image: url(../images/prototype/autres-elements/1-eponge.svg);
             background-size: 50%;
@@ -41,8 +41,8 @@
         }
         .rs-bg-color {
             background-image: url(../images/prototype/main-image/9-casserole.svg);
-            background-size: 330px;
-            background-position-x: 25%;
+            background-size: 280px;
+            background-position-x: 35%;
             background-position-y: 70%;
         }
     }

@@ -77,20 +77,35 @@
     &--armoire{
         transform: translateY(-30px);
     }
-    &--lessive, &--adoucissant, &--vitres, &--wc, &--tablettes, &--multi, &--degraissant, &--desodorisant, &--detartrant, &--liquide{
+    &--lessive, &--adoucissant, &--vitres, &--desodorisant, &--detartrant, &--liquide{
         transform: translateY(0);
     }
     &--wc{
         width: 220px;
+        transform: translateY(10px);
+    }
+    &--tablettes{
+        transform: translateY(-25px);
+    }
+    &--multi{
+        transform: translateY(0px);
+    }
+    &--degraissant{
+        transform: translateY(25px);
+    }
+    &--desodorisant{
+        transform: translateY(0px);
     }
     &--multi, &--degraissant, &--desodorisant{
         width: 320px;
     }
     &--detartrant{
-        width: 350px;
+        width: 250px;
+        transform: translateY(0px);
     }
     &--liquide{
-        width: 320px;
+        width: 300px;
+        transform: translateY(0px);
     }
 }
 
@@ -106,6 +121,7 @@
 .next{
     width: 61px;
     height: 38px;
+    z-index: 20;
 }
 .warning__next{
     width: 102px;

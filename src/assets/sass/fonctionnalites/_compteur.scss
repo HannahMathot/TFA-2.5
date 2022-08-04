@@ -4,7 +4,7 @@
     &--lessive{
         font-size: $fontSize3Mobile;
         *{
-            top: 154px;
+            top: calc(50vh - 123px);
         }
         button{
             background-color: transparent;
@@ -13,13 +13,13 @@
             text-align: center;
         }
         .compteur__remove{
-            transform: translateX(-50%) translateX(-16px) translateY(3px);
+            transform: translateX(-50%) translateX(-25px) translateY(3px);
         }
         .compteur__value{
-            transform: translateX(-50%) translateX(25px);
+            transform: translateX(-50%) translateX(12px);
         }
         .compteur__add{
-            transform: translateX(-50%) translateX(62px) translateY(3px);
+            transform: translateX(-50%) translateX(49px) translateY(3px);
         }
     }
     &--tablettes{
@@ -35,36 +35,43 @@
             background-image: url(../images/prototype/autres-elements/4-tablettes.svg);
             width: 160px;
             height: 160px;
-            transform: translateY(300px) translateX(-50%) translateX(100px);
+            position: absolute;
+            top: calc(50vh + 20px);
+            left: calc(50vw + 20px);
         }
         .compteur__remove{
             background-image: url(../images/prototype/autres-elements/5-tablette-moins.svg);
-            transform: translateY(410px) translateX(-50%) translateX(30px);
-            background-position-y: 150%;
+            background-position-y: 75%;
+            position: absolute;
+            top: calc(50vh + 135px);
+            left: calc(50vw);
         }
         .compteur__value{
-            background-image: url(../images/prototype/autres-elements/6-tablette-value.svg);
-            transform: translateY(420px) translateX(-50%) translateX(95px);
-            text-align: center;
-            background-position-y: 20%;
+            top: calc(50vh + 95px);
+            left: calc(50vw + 77px);
         }
         .compteur__add{
-            background-image: url(../images/prototype/autres-elements/7-tablette-plus.svg);
-            transform: translateY(405px) translateX(-50%) translateX(150px);
-            background-position: 65%;
+            background-image: url(../images/prototype/autres-elements/5-tablette-moins.svg);
+            background-position-y: 75%;
+            position: absolute;
+            top: calc(50vh + 135px);
+            left: calc(50vw + 110px);
         }
     }
     &--desodorisant{
         .compteur__remove{
-            transform: translateY(201px) translateX(-50%) translateX(-130px);
+            top: calc(50vh - 89px);
+            transform: translateX(-50%) translateX(-130px);
             font-size: $fontSize7Mobile;
         }
         .compteur__value{
-            transform: translateY(206px) translateX(-50%) translateX(-90px);
+            top: calc(50vh - 85px);
+            transform: translateX(-50%) translateX(-90px);
             font-size: $fontSize5Mobile;
         }
         .compteur__add{
-            transform: translateY(209px) translateX(-50%) translateX(-50px);
+            top: calc(50vh - 80px);
+            transform: translateX(-50%) translateX(-50px);
             font-size: $fontSize5Mobile;
         }
     }
