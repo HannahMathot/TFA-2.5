@@ -27,8 +27,10 @@ body, small, li, .rs-tooltip-text{
 .tiny-title{
     font-size: $fontSize2Mobile;
 }
-.slider__el h3{
+.slider__el h3, .temoignages-list__avis{
     font-size: $fontSize1Mobile;
+}
+.slider__el h3{
     text-align: center;
 }
 .footer a, .main-case a, .main-credits a, .main-uikit a{

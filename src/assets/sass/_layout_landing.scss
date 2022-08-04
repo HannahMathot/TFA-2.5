@@ -19,6 +19,9 @@ body{
         }
     }
 }
+.section-5{
+    justify-content: flex-start;
+}
 .header, .footer, .section{
     width: 100vw;
     height: 100vh;
@@ -139,14 +142,25 @@ body{
         }
     }
     &-5{
+        position: relative;
+        overflow: hidden;
+        &__first-title{
+            padding-top: 35px;
+        }
+        .medium-title{
+            padding-bottom: 13px;
+        }
         .temoignages-list{
+            z-index: 0;
             display: flex;
-            display: none;
+            position: absolute;
+            left: 0;
+            transform: translateY(285px);
             &__el{
                 border-radius: 15px;
-                min-width: 280px;
-                height: 300px;
-                margin: 0px 50px;
+                min-width: 240px;
+                height: 225px;
+                margin: 0px 60px;
                 user-select: none; /* supported by Chrome and Opera */
                 -webkit-user-select: none; /* Safari */
                 -khtml-user-select: none; /* Konqueror HTML */
@@ -154,7 +168,8 @@ body{
                 -ms-user-select: none; /* Internet Explorer/Edge */
                 display: flex;
                 flex-direction: column;
-                padding-top: 15px;
+                padding-top: 5px;
+                padding-bottom: 22px;
                 & *{
                     width: 217px;
                     margin: 0 auto;
@@ -168,6 +183,26 @@ body{
             &__avis{
                 padding-top: 20px;
             }
+        }
+        &__button{
+            background-color: transparent;
+            border: none;
+            width: 40px;
+            min-height: 30px;
+            background-image: url(../images/4-fleche.svg);
+            background-repeat: no-repeat;
+            background-size: 40px;
+            background-position: center;
+            position: absolute;
+            &--previous{
+                transform: translateY(400px);
+                left: 3%;
+            }
+            &--next{
+                transform: translateY(400px) rotate(180deg);
+                right: 3%;
+            }
+            z-index: 2;
         }
     }
     &-case{
@@ -213,11 +248,14 @@ body{
         height: 22.5px;
         background-size: contain;
         display: inline-block;
-        text-indent: 200%;
-        white-space: nowrap;
-        overflow: hidden;
         transform: translateX(5px) translateY(5px);
     }
+}
+
+.dwm, .section-5__button{
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .main-uikit{
