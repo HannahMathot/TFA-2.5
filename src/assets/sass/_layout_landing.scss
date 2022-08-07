@@ -101,6 +101,10 @@ body{
             right: 0;
             transform: translateY(-180px);
         }
+        &-list__el img{
+            width: 60%;
+            margin-top: 50px;
+        }
     }
     &-2{
         &::after{
@@ -109,6 +113,19 @@ body{
             background-size: 105px;
             top: 300vh;
             transform: translateY(-170px) translateX(-10px);
+        }
+        &-list{
+            gap: 10px;
+            &__el img{
+                width: 100%;
+                margin-top: 50px;
+            }
+        }
+    }
+    &-1, &-2{
+        &-list{
+            display: flex;
+            align-items: center;
         }
     }
     &-3{

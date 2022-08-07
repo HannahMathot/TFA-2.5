@@ -27,7 +27,7 @@
 //mobile first
 @media (min-width : 500px){
     .header, .section{
-        .description, .medium-title, .logo, &-1 *, &-2 *, &-3 *, &-4 *, &-5 *, &-case *{
+        .description, .medium-title, .logo, &-1 *, &-2 *, &-3 *, &-4 *, &-5 .medium-title, &-5__text, &-case *{
             width: 400px;
         }
     }
@@ -36,12 +36,18 @@
             width: 400px;
         }
     }
-    .section{
-        &-5{
-            &__button{
-                width: 147px;
-                height: 38px;
-            }
+    .section-5{
+        &__first-title{
+            padding-top: 55px;
+        }
+        .temoignages-list{
+            transform: translateY(265px);
+        }
+        &__button--previous{
+            transform: translateY(380px);
+        }
+        &__button--next{
+            transform: translateY(380px) rotate(180deg);
         }
     }
 }
@@ -77,7 +83,7 @@
         font-size: $fontSize2Desktop;
     }
     .header, .section{
-        .description, .medium-title, .logo, &-1 *, &-2 *, &-3 *, &-4 *, &-5 *, &-case *{
+        .description, .medium-title, .logo, &-1 *, &-2 *, &-3 *, &-4 *, &-5 .medium-title, &-5__text, &-case *{
             width: 500px;
         }
     }
@@ -125,9 +131,22 @@
 
         }
         &-5{
-            &__button{
-                width: 182px;
-                height: 48px;
+            .medium-title{
+                width: 520px;
+            }
+            &__first-title{
+                padding-top: 45px;
+            }
+            .temoignages-list{
+                transform: translateY(275px);
+            }
+            &__button--previous{
+                transform: translateY(390px);
+                left: 1.5%;
+            }
+            &__button--next{
+                transform: translateY(390px) rotate(180deg);
+                right: 1.5%;
             }
         }
     }
@@ -138,7 +157,7 @@
         font-size: $fontSize2Desktop;
     }
     .header, .section{
-        .medium-title, .logo, &-1 *, &-2 *, &-3 *, &-4 *, &-5 *, &-case *{
+        .medium-title, .logo, &-1 *, &-2 *, &-3 *, &-4 *, &-5 .medium-title, &-5__text, &-case *{
             width: 500px;
         }
         .description{
@@ -148,16 +167,32 @@
             margin-top: 50px;
         }
     }
-    .section-5__button{
-        width: 182px;
-        height: 48px;
-    }
     .footer{
         .prototypes{
             width: 180px;
         }
         .copyright-annee{
             width: 380px;
+        }
+    }
+    .section{
+        &-5{
+            .medium-title, &__text{
+                width: 520px;
+            }
+            &__first-title{
+                padding-top: 35px;
+            }
+            .temoignages-list__el{
+                padding-top: 7px;
+                padding-bottom: 30px;
+            }
+            &__button--previous{
+                transform: translateY(400px);
+            }
+            &__button--next{
+                transform: translateY(400px) rotate(180deg);
+            }
         }
     }
 }
@@ -198,12 +233,8 @@
 
 @media (min-width : 1000px){
     .section{
-        .medium-title, &-1 *, &-2 *, &-3 *, &-4 *, &-5 *, &-case *{
+        .medium-title, &-1 *, &-2 *, &-3 *, &-4 *, &-5 .medium-title, &-5__text, &-case *{
             width: 700px;
-        }
-        &-5__button{
-            width: 182px;
-            height: 48px;
         }
         &-case{
             img{

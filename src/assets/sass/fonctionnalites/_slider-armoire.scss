@@ -7,52 +7,52 @@
     }
     &__lessive button{
         width: 24px;
-        top: -185px;
+        top: -145px;
         transform: translateX(-65px);
     }
     &__adoucissant button{
         width: 25px;
-        top: -184px;
+        top: -144px;
         transform: translateX(-40px);
     }
     &__vitres button{
         width: 29px;
-        top: -183px;
+        top: -143px;
         transform: translateX(-15px);
     }
     &__wc button{
         width: 19px;
-        top: -185px;
+        top: -145px;
         transform: translateX(15px);
     }
     &__tablettes button{
         width: 31px;
-        top: -173px;
+        top: -133px;
         transform: translateX(35px);
     }
     &__multi button{
         width: 20px;
-        top: -105px;
+        top: -65px;
         transform: translateX(-65px);
     }
     &__degraissant button{
         width: 28px;
-        top: -105px;
+        top: -65px;
         transform: translateX(-41px);
     }
     &__desodorisant button{
         width: 17px;
-        top: -104px;
+        top: -64px;
         transform: translateX(-10px);
     }
     &__detartrant button{
         width: 22px;
-        top: -105px;
+        top: -65px;
         transform: translateX(12px);
     }
     &__liquide button{
         width: 26px;
-        top: -105px;
+        top: -65px;
         transform: translateX(39px);
     }
 }
@@ -150,35 +150,72 @@
     }
 }
 
-.slider__lessive, .armoire__lessive button{
+.armoire{
+    &__el button{
+        height: 70px;
+    }
+}
+
+.slider__lessive{
     background-image: url("../images/prototype/produits-labellises/1-lessive.svg");
 }
-.slider__adoucissant, .armoire__adoucissant button{
+.slider__adoucissant{
     background-image: url("../images/prototype/produits-labellises/2-adoucissant.svg");
 }
-.slider__vitres, .armoire__vitres button{
+.slider__vitres{
     background-image: url("../images/prototype/produits-labellises/3-vitres.svg");
 }
-.slider__wc, .armoire__wc button{
+.slider__wc{
     background-image: url("../images/prototype/produits-labellises/4-wc.svg");
 }
-.slider__tablettes, .armoire__tablettes button{
+.slider__tablettes{
     background-image: url("../images/prototype/produits-labellises/5-tablettes.svg");
 }
-.slider__multi, .armoire__multi button{
+.slider__multi{
     background-image: url("../images/prototype/produits-labellises/6-multi.svg");
 }
-.slider__degraissant, .armoire__degraissant button{
+.slider__degraissant{
     background-image: url("../images/prototype/produits-labellises/7-degraissant.svg");
 }
-.slider__desodorisant, .armoire__desodorisant button{
+.slider__desodorisant{
     background-image: url("../images/prototype/produits-labellises/8-desodorisant.svg");
 }
-.slider__detartrant, .armoire__detartrant button{
+.slider__detartrant{
     background-image: url("../images/prototype/produits-labellises/9-detartrant.svg");
 }
-.slider__liquide, .armoire__liquide button{
+.slider__liquide{
     background-image: url("../images/prototype/produits-labellises/10-liquide.svg");
+}
+
+.armoire__lessive button{
+    background-image: url("../images/prototype/produits-armoire/1-lessive.svg");
+}
+.armoire__adoucissant button{
+    background-image: url("../images/prototype/produits-armoire/2-adoucissant.svg");
+}
+.armoire__vitres button{
+    background-image: url("../images/prototype/produits-armoire/3-vitres.svg");
+}
+.armoire__wc button{
+    background-image: url("../images/prototype/produits-armoire/4-wc.svg");
+}
+.armoire__tablettes button{
+    background-image: url("../images/prototype/produits-armoire/5-tablettes.svg");
+}
+.armoire__multi button{
+    background-image: url("../images/prototype/produits-armoire/6-multi.svg");
+}
+.armoire__degraissant button{
+    background-image: url("../images/prototype/produits-armoire/7-degraissant.svg");
+}
+.armoire__desodorisant button{
+    background-image: url("../images/prototype/produits-armoire/8-desodorisant.svg");
+}
+.armoire__detartrant button{
+    background-image: url("../images/prototype/produits-armoire/9-detartrant.svg");
+}
+.armoire__liquide button{
+    background-image: url("../images/prototype/produits-armoire/10-liquide.svg");
 }
 
 .slider__button, .slider__el button, .armoire__el button{
