@@ -101,10 +101,6 @@ body{
             right: 0;
             transform: translateY(-180px);
         }
-        &-list__el img{
-            width: 60%;
-            margin-top: 50px;
-        }
     }
     &-2{
         &::after{
@@ -162,7 +158,7 @@ body{
         position: relative;
         overflow: hidden;
         &__first-title{
-            padding-top: 35px;
+            padding-top: 45px;
         }
         .medium-title{
             padding-bottom: 13px;
@@ -172,7 +168,7 @@ body{
             display: flex;
             position: absolute;
             left: 0;
-            transform: translateY(285px);
+            top: 315px;
             &__el{
                 border-radius: 15px;
                 min-width: 240px;
@@ -212,11 +208,11 @@ body{
             background-position: center;
             position: absolute;
             &--previous{
-                transform: translateY(400px);
+                transform: translateY(430px);
                 left: 3%;
             }
             &--next{
-                transform: translateY(400px) rotate(180deg);
+                transform: translateY(430px) rotate(180deg);
                 right: 3%;
             }
             z-index: 2;
