@@ -28,7 +28,7 @@
 //mobile first
 @media (min-width : 500px){
     .header, .section{
-        .description, .medium-title, .logo, &-1 *, &-2 *, &-3 *, &-4 *, &-5 .medium-title, &-5__text, &-case *{
+        .description, .medium-title, .logo, &-1 *, &-2__title, &-2__text, &-3 *, &-4 *, &-5 .medium-title, &-5__text, &-case *{
             width: 400px;
         }
     }
@@ -36,6 +36,9 @@
         *{
             width: 400px;
         }
+    }
+    .section-2-list__el2 img{
+        margin-top: 45px;
     }
     .section-5{
         &__first-title{
@@ -84,7 +87,7 @@
         font-size: $fontSize2Desktop;
     }
     .header, .section{
-        .description, .medium-title, .logo, &-1 *, &-2 *, &-3 *, &-4 *, &-5 .medium-title, &-5__text, &-case *{
+        .description, .medium-title, .logo, &-1 *, &-2__title, &-2__text, &-3 *, &-4 *, &-5 .medium-title, &-5__text, &-case *{
             width: 500px;
         }
     }
@@ -115,9 +118,11 @@
             background-size: 110px;
             transform: translateY(-200px);
         }
-        &-2::after{
-            height: 220px;
-            background-size: 125px;
+        &-2{
+            &::after{
+                height: 220px;
+                background-size: 125px;
+            }
         }
         &-3::after{
             height: 290px;
@@ -147,7 +152,7 @@
         font-size: $fontSize2Desktop;
     }
     .header, .section{
-        .medium-title, .logo, &-1 *, &-2 *, &-3 *, &-4 *, &-5 .medium-title, &-5__text, &-case *{
+        .medium-title, .logo, &-1 *, &-2__title, &-2__text, &-3 *, &-4 *, &-5 .medium-title, &-5__text, &-case *{
             width: 500px;
         }
         .description{
@@ -166,6 +171,9 @@
         }
     }
     .section{
+        &-2-list__el2 img{
+            margin-top: 15px;
+        }
         &-5{
             .medium-title, &__text{
                 width: 520px;
@@ -226,7 +234,7 @@
 
 @media (min-width : 1000px){
     .section{
-        .medium-title, &-1 *, &-2 *, &-3 *, &-4 *, &-5 .medium-title, &-5__text, &-case *{
+        .medium-title, &-1 *, &-2__title, &-2__text, &-3 *, &-4 *, &-5 .medium-title, &-5__text, &-case *{
             width: 700px;
         }
         &-case{
@@ -234,6 +242,40 @@
                 width: 30vw;
                 display: block;
                 margin: 30px auto;
+            }
+        }
+        &-1{
+            &-list{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 700px;
+                margin-top: 30px;
+                &__el{
+                    width: fit-content;
+                    img{
+                        height: 200px;
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+        &-2{
+            &-list{
+                width: 500px;
+                &__el{
+                    &1{
+                        display: flex;
+                        img{
+                            height: 220px;
+                            margin-top: 40px;
+                        }
+                    }
+                    &2 img{
+                        height: 210px;
+                        margin-top: 40px;
+                    }
+                }
             }
         }
     }

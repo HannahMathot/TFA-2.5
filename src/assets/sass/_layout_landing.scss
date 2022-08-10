@@ -101,6 +101,9 @@ body{
             right: 0;
             transform: translateY(-180px);
         }
+        &-list{
+            display: none;
+        }
     }
     &-2{
         &::after{
@@ -111,17 +114,23 @@ body{
             transform: translateY(-170px) translateX(-10px);
         }
         &-list{
-            gap: 10px;
-            &__el img{
-                width: 100%;
-                margin-top: 50px;
-            }
-        }
-    }
-    &-1, &-2{
-        &-list{
             display: flex;
             align-items: center;
+            width: 200px;
+            &__el{
+                display: flex;
+                justify-content: space-around;
+                &1{
+                    display: none;
+                }
+                &1 img, &2 img{
+                    width: fit-content;
+                    margin-top: 15px;
+                }
+                &2 img{
+                    height: 150px;
+                }
+            }
         }
     }
     &-3{
@@ -169,6 +178,7 @@ body{
             position: absolute;
             left: 0;
             top: 315px;
+            transition: 1s ease-out;
             &__el{
                 border-radius: 15px;
                 min-width: 240px;
