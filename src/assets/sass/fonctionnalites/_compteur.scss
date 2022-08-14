@@ -4,7 +4,7 @@
     &--lessive{
         font-size: $fontSize3Mobile;
         *{
-            top: calc(50vh - 123px);
+            top: 182px;
         }
         button{
             background-color: transparent;
@@ -36,42 +36,35 @@
             width: 160px;
             height: 160px;
             position: absolute;
-            top: calc(50vh + 20px);
-            left: calc(50vw + 20px);
+            transform: translateY(320px) translateX(-50%) translateX(100px);
         }
         .compteur__remove{
             background-image: url(../images/prototype/autres-elements/5-tablette-moins.svg);
             background-position-y: 75%;
             position: absolute;
-            top: calc(50vh + 135px);
-            left: calc(50vw);
+            transform: translateY(450px) translateX(-50%) translateX(30px);
         }
         .compteur__value{
-            top: calc(50vh + 95px);
-            left: calc(50vw + 77px);
+            transform: translateY(400px) translateX(-50%) translateX(105px);
         }
         .compteur__add{
             background-image: url(../images/prototype/autres-elements/5-tablette-moins.svg);
             background-position-y: 75%;
             position: absolute;
-            top: calc(50vh + 135px);
-            left: calc(50vw + 110px);
+            transform: translateY(445px) translateX(-50%) translateX(150px);
         }
     }
     &--desodorisant{
         .compteur__remove{
-            top: calc(50vh - 89px);
-            transform: translateX(-50%) translateX(-130px);
+            transform: translateY(221px) translateX(-50%) translateX(-130px);
             font-size: $fontSize7Mobile;
         }
         .compteur__value{
-            top: calc(50vh - 85px);
-            transform: translateX(-50%) translateX(-90px);
+            transform: translateY(226px) translateX(-50%) translateX(-90px);
             font-size: $fontSize5Mobile;
         }
         .compteur__add{
-            top: calc(50vh - 80px);
-            transform: translateX(-50%) translateX(-50px);
+            transform: translateY(229px) translateX(-50%) translateX(-50px);
             font-size: $fontSize5Mobile;
         }
     }

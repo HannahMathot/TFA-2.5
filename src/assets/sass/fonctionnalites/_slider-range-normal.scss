@@ -15,7 +15,7 @@
     &--vitres{
         *{
             transform: translateX(-50%);
-            top: calc(50vh + 32px);
+            top: 328px;
         }
         input{
             width: 160px;
@@ -27,7 +27,7 @@
     &--multi{
         *{
             transform: translateX(-50%);
-            top: calc(50vh - 35px);
+            top: 300px;
         }
         ::-webkit-slider-thumb{
             appearance: none;
@@ -51,7 +51,7 @@
     &--detartrant{
         *{
             transform: translateX(-50%);
-            top: calc(50vh + 30px);
+            top: 330px;
         }
         input{
             width: 140px;

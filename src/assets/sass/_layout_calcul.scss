@@ -59,53 +59,48 @@
 }
 
 //main image
-.main-image-container, .armoire{
-    //background-color: red;
-    position: absolute;
-    top: 126px;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    bottom: 58px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .main-image{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 250px;
     z-index: 10;
     &--armoire{
-        transform: translateY(-30px);
+        transform: translateY(-30px) translateX(-50%);
     }
-    &--lessive, &--adoucissant, &--vitres, &--desodorisant, &--detartrant, &--liquide{
-        transform: translateY(0);
+    &--lessive, &--adoucissant{
+        transform: translateX(-50%) translateY(-30px);
+    }
+    &--vitres, &--desodorisant, &--detartrant, &--liquide{
+        transform: translateX(-50%) translateY(0);
     }
     &--wc{
         width: 220px;
-        transform: translateY(10px);
+        transform: translateX(-50%) translateY(10px);
     }
     &--tablettes{
-        transform: translateY(-25px);
+        transform: translateX(-50%) translateY(-25px);
     }
     &--multi{
-        transform: translateY(0px);
+        transform: translateX(-50%) translateY(80px);
     }
     &--degraissant{
-        transform: translateY(25px);
+        transform: translateX(-50%) translateY(25px);
     }
     &--desodorisant{
-        transform: translateY(0px);
+        transform: translateX(-50%) translateY(0px);
     }
     &--multi, &--degraissant, &--desodorisant{
         width: 320px;
     }
     &--detartrant{
         width: 250px;
-        transform: translateY(0px);
+        transform: translateX(-50%) translateY(0px);
     }
     &--liquide{
         width: 300px;
-        transform: translateY(0px);
+        transform: translateX(-50%) translateY(0px);
     }
 }
 
