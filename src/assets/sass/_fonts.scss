@@ -21,10 +21,10 @@ body, small, li, .rs-tooltip-text{
 .in-between-title{
     font-size: $fontSize5Mobile;
 }
-.small-title, .section-5__button, .results-text, .highlight-text, .liens-list__el{
+.small-title, .section-5__button, .results-text, .highlight-text{
     font-size: $fontSize3Mobile;
 }
-.tiny-title{
+.tiny-title, .liens-list__el{
     font-size: $fontSize2Mobile;
 }
 .slider__el h3, .temoignages-list__avis{

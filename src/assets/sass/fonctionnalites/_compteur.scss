@@ -4,7 +4,7 @@
     &--lessive{
         font-size: $fontSize3Mobile;
         *{
-            top: 182px;
+            top: 157px;
         }
         button{
             background-color: transparent;
@@ -36,35 +36,35 @@
             width: 160px;
             height: 160px;
             position: absolute;
-            transform: translateY(320px) translateX(-50%) translateX(100px);
+            transform: translateY(280px) translateX(-50%) translateX(100px);
         }
         .compteur__remove{
             background-image: url(../images/prototype/autres-elements/5-tablette-moins.svg);
             background-position-y: 75%;
             position: absolute;
-            transform: translateY(450px) translateX(-50%) translateX(30px);
+            transform: translateY(400px) translateX(-50%) translateX(30px);
         }
         .compteur__value{
-            transform: translateY(400px) translateX(-50%) translateX(105px);
+            transform: translateY(355px) translateX(-50%) translateX(110px);
         }
         .compteur__add{
             background-image: url(../images/prototype/autres-elements/5-tablette-moins.svg);
             background-position-y: 75%;
             position: absolute;
-            transform: translateY(445px) translateX(-50%) translateX(150px);
+            transform: translateY(400px) translateX(-50%) translateX(150px);
         }
     }
     &--desodorisant{
         .compteur__remove{
-            transform: translateY(221px) translateX(-50%) translateX(-130px);
+            transform: translateY(191px) translateX(-50%) translateX(-130px);
             font-size: $fontSize7Mobile;
         }
         .compteur__value{
-            transform: translateY(226px) translateX(-50%) translateX(-90px);
+            transform: translateY(196px) translateX(-50%) translateX(-90px);
             font-size: $fontSize5Mobile;
         }
         .compteur__add{
-            transform: translateY(229px) translateX(-50%) translateX(-50px);
+            transform: translateY(199px) translateX(-50%) translateX(-50px);
             font-size: $fontSize5Mobile;
         }
     }
