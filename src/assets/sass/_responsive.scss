@@ -73,11 +73,14 @@
             }
         }
     }
+    footer *{
+        font-size: $fontSize1Desktop;
+    }
 }
 
 //tablette & desktop version
 @media (min-width : 700px){
-    body, small, li{
+    body, small, li, footer *{
         font-size: $fontSize1Desktop;
     }
     .medium-title{
@@ -148,7 +151,7 @@
 }
 
 @media (min-width : 800px){
-    body, small, li{
+    body, small, li, footer *{
         font-size: $fontSize2Desktop;
     }
     .header, .section{
